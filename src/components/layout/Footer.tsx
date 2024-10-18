@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { Brain, GithubIcon, InstagramIcon, Mail, Twitter } from "lucide-react";
+import { BookX, GithubIcon, InstagramIcon, Mail, Twitter } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { ReactNode } from "react";
 
@@ -30,15 +30,15 @@ export const Footer = () => {
 
   return (
     <footer className="w-full mb-6 mt-14 flex gap-6 flex-wrap items-center justify-evenly">
-      <a
-        className="flex items-center gap-2 hover:underline hover:underline-offset-4 font-semibold"
+      <Link
         href="/"
-        target="_blank"
-        rel="noopener noreferrer"
+        className="flex items-center space-x-2 hover:bg-neutral-800 hover:text-background transition-colors duration-300 p-2 rounded-md"
       >
-        <Brain size={20} />
-        {siteConfig.name}
-      </a>
+        <BookX size={20} />
+        <span className="font-bold font-mono tracking-wide">
+          {siteConfig.name}
+        </span>
+      </Link>
       <div className="flex justify-center items-center gap-6 text-sm">
         {socialLinks.map((link, index) => (
           <FooterLink
@@ -70,7 +70,7 @@ function FooterLink({
 }: MobileLinksProps) {
   return (
     <Link
-      className={cn("flex justify-center items-center gap-2", className)}
+      className={cn("flex justify-center items-center gap-2 hover:underline hover:underline-offset-2", className)}
       href={href}
       {...props}
     >
