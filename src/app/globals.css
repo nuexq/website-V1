@@ -88,18 +88,18 @@ body {
     @apply bg-neutral-300/60 px-3 py-2 text-sm font-mono;
   }
 
-  .project-card {
-    @apply flex flex-col gap-4 my-4;
-  }
-  .project-card>div {
-    @apply bg-neutral-300/60 px-3 py-2 w-[42rem] relative;
-  }
-  .project-card>div h3 {
-    @apply text-2xl mt-2 mb-3 font-geistMono;
-  }
-  .project-card>div p {
-    @apply my-2;
-  }
+  /* .project-card { */
+  /*   @apply flex flex-col gap-4 my-4; */
+  /* } */
+  /* .project-card>div { */
+  /*   @apply bg-neutral-300/60 px-3 py-2 relative flex justify-between w-fit; */
+  /* } */
+  /* .project-card>div h3 { */
+  /*   @apply text-2xl mt-2 font-geistMono; */
+  /* } */
+  /* .project-card>div p { */
+  /*   @apply my-2; */
+  /* } */
 
   .nav div > * {
     @apply px-3 py-2 hover:bg-neutral-300/60 font-geistMono w-44 cursor-pointer border-b border-neutral-300 last:border-none;
