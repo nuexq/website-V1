@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { BookX, GithubIcon, InstagramIcon, Mail, Twitter } from "lucide-react";
+import { GithubIcon, InstagramIcon, Mail, Twitter } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { ReactNode } from "react";
 
@@ -29,12 +29,11 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="w-full mb-6 mt-14 flex gap-6 flex-wrap items-center justify-evenly">
+    <footer className="w-full mb-6 mt-14 flex max-sm:flex-col gap-6 items-center justify-evenly">
       <Link
         href="/"
-        className="flex items-center space-x-2 hover:bg-neutral-800 hover:text-background transition-colors duration-300 p-2 rounded-md"
+        className="flex items-center p-2"
       >
-        <BookX size={20} />
         <span className="font-bold font-mono tracking-wide">
           {siteConfig.name}
         </span>

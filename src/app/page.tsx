@@ -1,20 +1,67 @@
+import Container from "@/components/Container";
+import Title from "@/components/Title";
 import { siteConfig } from "@/config/site";
+import Link from "next/link";
 
 export default function Home() {
-  return (
-    <section className="flex justify-center items-center pb-8 pt-6 md:pb-12 md:mt-10 lg:py-32 flex-1">
-      <div className="container flex flex-col gap-6 text-center w-full">
-        <div className="-z-10 absolute top-14 right-20 size-[35rem] bg-gradient-to-tr from-background from-20% to-neutral-800/30 blur-3xl rounded-full" />
-        <div className="space-y-4">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-balance">
-            What Mark&apos;s <span className="hover:bg-neutral-800 hover:text-background transition-colors duration-300 px-2 rounded-lg">{siteConfig.name}</span>{" "}
-          </h1>
-          <p className="max-w-[42rem] mx-auto text-muted-foreground sm:text-xl text-balance">
-            {siteConfig.description}
-          </p>
-        </div>
-        <div className="-z-10 absolute bottom-14 left-20 h-[35rem] w-[60rem] bg-gradient-to-bl from-background from-0% to-neutral-800/30 blur-3xl rounded-full" />
-      </div>
-    </section>
-  );
+	return (
+		<Container>
+			<div>
+				<Title title="No0ne" />
+			</div>
+			{/*
+            <div className="info-card">
+              <div>16 years old</div>
+              <div>Programmer</div>
+              <div>kick boxing</div>
+              <div>Calistanics</div>
+            </div>
+            */}
+			<div className="leading-relaxed">
+				<p>
+					Hello I&apos;m {siteConfig.name} or No0ne003 a Front-End developer
+					from morocco, I start with html on{" "}
+					<span className="font-bold">08/26/2023</span> and I&apos;m currently
+					learning{" "}
+					<span className="bg-neutral-300/60 font-bold px-1">
+						C/C++, algorithms & data structers and low level things
+					</span>
+					. I learned backend basics but I need practicing more. maybe in{" "}
+					<span className="font-bold">2025</span>.
+				</p>
+				<br />
+				<p>
+					I&apos;m good at{" "}
+					<span className="bg-neutral-300/60 font-bold">
+						JS/TS, React/Next.js
+					</span>{" "}
+					and ovecourse{" "}
+					<span className="bg-neutral-300/60 font-bold">HTML and CSS</span>{" "}
+					<span className="text-sm">(tailwind btw)</span>. I learned
+					basics of backend in js but I still need practice.
+				</p>
+				<br />
+				<p>
+					I love using <span className="font-bold">Linux</span>{" "}
+					<span className="text-lg">(arch btw)</span> with Hyprland Window
+					Manager, Linux give me what I need as a programmer and it work very
+					well.
+					<br />I also sometimes Game on linux a simple games like stardew
+					valley, hollow knight, and I swear to god I play roblox just with
+					friends for laughing.
+					<br />
+					I&apos;m also a <span className="font-bold">kick boxer</span> for like
+					a 1 year now and I love Calistanics.
+				</p>
+				<br />
+				You can see random stuff about me in{" "}
+				<Link className="underline underline-offset-2" href="/random">
+					here
+				</Link>
+				<br />
+				<br />
+				this is a tested portfolio I make it in 1 hour when the wifi is off
+			</div>
+		</Container>
+	);
 }

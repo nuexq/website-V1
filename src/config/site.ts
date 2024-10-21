@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "ToPass..",
-  url: "https://ToWin.vercel.app/",
-  description: "Calculate what marks you need to pass school test's and get your dream mark",
+  name: "No0ne",
+  url: "https://No0ne003.vercel.app/",
+  description: "No0ne portfolio",
   author: "No0ne003",
   links: {
     github: "https://github.com/No0ne003",
