@@ -40,7 +40,7 @@ export default defineConfig({
   mdx: {
     rehypePlugins: [
       rehypeSlug,
-      [rehypePrettyCode, { theme: "catppuccin-mocha" }],
+      [rehypePrettyCode, { theme: "catppuccin-latte" }],
       [
         rehypeAutolinkHeadings,
         {
