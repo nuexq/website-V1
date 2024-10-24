@@ -8,87 +8,91 @@ import { MDXContent } from "@/components/mdx-components";
 import Container from "@/components/Container";
 import Title from "@/components/Title";
 import Link from "next/link";
+import { formateDate } from "@/lib/utils";
 
 interface PostPageProps {
-  params: {
-    slug: string[];
-  };
+	params: {
+		slug: string[];
+	};
 }
 
 async function getPostFromParams(params: PostPageProps["params"]) {
-  const slug = params?.slug?.join("/");
-  const post = posts.find((post) => post.slugAsParams === slug);
+	const slug = params?.slug?.join("/");
+	const post = posts.find((post) => post.slugAsParams === slug);
 
-  return post;
+	return post;
 }
 
 export async function generateMetadata({
-  params,
+	params,
 }: PostPageProps): Promise<Metadata> {
-  const post = await getPostFromParams(params);
+	const post = await getPostFromParams(params);
 
-  if (!post) {
-    return {};
-  }
+	if (!post) {
+		return {};
+	}
 
-  const ogSearchParams = new URLSearchParams();
-  ogSearchParams.set("title", post.title);
+	const ogSearchParams = new URLSearchParams();
+	ogSearchParams.set("title", post.title);
 
-  return {
-    title: post.title,
-    description: post.description,
-    authors: { name: siteConfig.author },
-    openGraph: {
-      title: post.title,
-      description: post.description,
-      type: "article",
-      url: post.slug,
-      images: [
-        {
-          url: `/api/og?${ogSearchParams.toString()}`,
-          width: 1200,
-          height: 630,
-          alt: post.title,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: post.title,
-      description: post.description,
-      images: [`/api/og?${ogSearchParams.toString()}`],
-    },
-  };
+	return {
+		title: post.title,
+		description: post.description,
+		authors: { name: siteConfig.author },
+		openGraph: {
+			title: post.title,
+			description: post.description,
+			type: "article",
+			url: post.slug,
+			images: [
+				{
+					url: `/api/og?${ogSearchParams.toString()}`,
+					width: 1200,
+					height: 630,
+					alt: post.title,
+				},
+			],
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: post.title,
+			description: post.description,
+			images: [`/api/og?${ogSearchParams.toString()}`],
+		},
+	};
 }
 
 export async function generateStaticParams(): Promise<
-  PostPageProps["params"][]
+	PostPageProps["params"][]
 > {
-  return posts.map((post) => ({ slug: post.slugAsParams.split("/") }));
+	return posts.map((post) => ({ slug: post.slugAsParams.split("/") }));
 }
 
 export default async function PostPage({ params }: PostPageProps) {
-  const post = await getPostFromParams(params);
+	const post = await getPostFromParams(params);
 
-  if (!post || !post.published) {
-    notFound();
-  }
+	if (!post || !post.published) {
+		notFound();
+	}
 
-  return (
-    <Container>
-      <p
-        className="font-geistMono hover:underline hover:underline-offset-4 text-sm"
-      >
-        <Link href="/blog">{`<=Back`}</Link>
-      </p>
-      <Title title={post.title} />
-      {post.description ? (
-        <p className="mt-0 text-muted-foreground">{post.description}</p>
-      ) : null}
-      <hr className="my-1" />
-      <div className="prose dark:prose-invert">
-        <MDXContent code={post.body} />
-      </div>
-    </Container>
-  );
+	return (
+		<Container>
+			<Title title={post.title} />
+			<div className="flex justify-between items-center">
+				<dl>
+					<dt className="sr-only">Published On</dt>
+					<dd className="text-sm flex items-center gap-1">
+						<time dateTime={post.date}>{formateDate(post.date)}</time>
+					</dd>
+				</dl>
+				<p className="font-geistMono hover:underline hover:underline-offset-4 text-sm">
+					<Link href="/blog">{`<=Back`}</Link>
+				</p>
+			</div>
+			<hr className="my-1" />
+			<div className="prose dark:prose-invert">
+				<MDXContent code={post.body} />
+			</div>
+		</Container>
+	);
 }

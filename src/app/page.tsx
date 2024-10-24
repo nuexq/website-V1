@@ -1,7 +1,14 @@
 import Container from "@/components/Container";
 import Title from "@/components/Title";
 import { siteConfig } from "@/config/site";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "[N]o0ne",
+  description: "Home",
+};
+
 
 export default function Home() {
   return (
