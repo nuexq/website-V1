@@ -37,7 +37,6 @@
     @apply border-border;
   }
 
-  /* Scrollbar customization for smaller width and red background */
   *::-webkit-scrollbar {
     width: .5rem;
     height: .5rem;

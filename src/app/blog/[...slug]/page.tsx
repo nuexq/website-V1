@@ -7,6 +7,7 @@ import { siteConfig } from "@/config/site";
 import { MDXContent } from "@/components/mdx-components";
 import Container from "@/components/Container";
 import Title from "@/components/Title";
+import Link from "next/link";
 
 interface PostPageProps {
   params: {
@@ -75,6 +76,11 @@ export default async function PostPage({ params }: PostPageProps) {
 
   return (
     <Container>
+      <p
+        className="font-geistMono hover:underline hover:underline-offset-4 text-sm"
+      >
+        <Link href="/blog">{`<=Back`}</Link>
+      </p>
       <Title title={post.title} />
       {post.description ? (
         <p className="mt-0 text-muted-foreground">{post.description}</p>
