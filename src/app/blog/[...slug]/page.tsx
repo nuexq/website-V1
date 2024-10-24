@@ -36,7 +36,7 @@ export async function generateMetadata({
 	ogSearchParams.set("title", post.title);
 
 	return {
-		title: post.title,
+		title: `${post.title} | No0ne`,
 		description: post.description,
 		authors: { name: siteConfig.author },
 		openGraph: {

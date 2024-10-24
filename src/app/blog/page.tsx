@@ -37,7 +37,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-12 gap-3 mt-8">
+      <div className="grid grid-cols-12 gap-3 my-4">
         <div className="col-span-12 col-start-1">
           <hr />
           {displayPosts?.length > 0 ? (
