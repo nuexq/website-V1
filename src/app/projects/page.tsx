@@ -1,6 +1,12 @@
 import Container from "@/components/Container";
 import ProjectCard from "@/components/ProjectCard";
 import Title from "@/components/Title";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "[P}rojects",
+  description: "Collection of projects",
+};
 
 export default function Projects() {
   return (

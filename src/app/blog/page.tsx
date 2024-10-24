@@ -6,7 +6,7 @@ import {  sortPosts } from "@/lib/utils";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "My blog",
+  title: "[B]log",
   description: "my blog navigation page",
 };
 

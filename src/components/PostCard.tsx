@@ -24,7 +24,7 @@ const PostCard = ({ slug, title, description, date }: PostItemProps) => {
       <div className="flex justify-between items-center">
         <dl>
           <dt className="sr-only">Published On</dt>
-          <dd className="text-sm sm:text-base flex items-center gap-1">
+          <dd className="text-xs sm:text-base flex items-center gap-1">
             <CalendarIcon className="h-4 w-4" />
             <time dateTime={date}>{formateDate(date)}</time>
           </dd>
