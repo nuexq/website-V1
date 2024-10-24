@@ -4,12 +4,12 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
+    --background: 0 0% 93%;
+    --foreground: 0 0% 26%;
+    --card: 0 0% 83% / 45%;
+    --card-foreground: 0 0% 26%;
+    --popover: 0 0% 93%;
+    --popover-foreground: 0 0% 26%;
     --primary: 0 0% 9%;
     --primary-foreground: 0 0% 98%;
     --secondary: 0 0% 96.1%;
@@ -20,9 +20,9 @@
     --accent-foreground: 0 0% 9%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
+    --border: 0 0% 83.1%;
+    --input: 0 0% 83.1%;
+    --ring: 0 0% 26%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -52,7 +52,7 @@
   }
 
   body {
-    @apply bg-neutral-200 text-neutral-700;
+    @apply bg-background text-foreground;
   }
 }
 
@@ -72,11 +72,11 @@ body {
   }
 
   .info-card>div {
-    @apply bg-neutral-300/60 px-3 py-2 text-sm font-mono;
+    @apply bg-border/60 px-3 py-2 text-sm font-mono;
   }
 
   .nav div>* {
-    @apply px-3 py-2 hover:bg-neutral-300/60 font-geistMono w-44 cursor-pointer border-b border-neutral-300 last:border-none;
+    @apply px-3 py-2 hover:bg-border/60 font-geistMono w-44 cursor-pointer border-b border-border last:border-none;
   }
 
   .hint {

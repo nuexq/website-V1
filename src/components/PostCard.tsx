@@ -12,7 +12,7 @@ interface PostItemProps {
 
 const PostCard = ({ slug, title, description, date }: PostItemProps) => {
   return (
-    <article className="flex flex-col gap-2 border-border border-b bg-neutral-300/60 px-4 py-3">
+    <article className="flex flex-col gap-2 border-border border-b bg-card px-4 py-3">
       <div>
         <h2 className="text-2xl font-geistMono">
           <Link href={"/" + slug}>{title}</Link>

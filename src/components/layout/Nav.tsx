@@ -15,7 +15,7 @@ export const Nav = () => {
 
 	return (
 		<nav className="nav sm:border-r border-neutral-300">
-			<div className="flex flex-col sm:sticky sm:top-0">
+			<div className="flex flex-col sm:sticky sm:top-5">
 				{navLinks.map((link) => (
 					<Link
 						// className={pathname === link.href ? "font-bold" : ""}

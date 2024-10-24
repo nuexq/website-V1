@@ -5,7 +5,7 @@ export default function ProjectCard({
   desc,
 }: { name: string; desc: string }) {
   return (
-    <div className="flex gap-5 sm:gap-24 justify-between items-center bg-neutral-300/60 px-4 py-3 w-full">
+    <div className="flex gap-5 sm:gap-24 justify-between items-center bg-card px-4 py-3 w-full">
       <div className="flex flex-col gap-4 max-w-md">
         <h3 className="text-2xl font-geistMono">{name}</h3>
         <p className="max-sm:text-sm">{desc}</p>
