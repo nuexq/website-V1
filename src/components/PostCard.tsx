@@ -1,4 +1,3 @@
-import { CalendarIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import { cn, formateDate } from "@/lib/utils";
@@ -24,8 +23,7 @@ const PostCard = ({ slug, title, description, date }: PostItemProps) => {
       <div className="flex justify-between items-center">
         <dl>
           <dt className="sr-only">Published On</dt>
-          <dd className="text-xs sm:text-base flex items-center gap-1">
-            <CalendarIcon className="h-4 w-4" />
+          <dd className="text-sm flex items-center gap-1">
             <time dateTime={date}>{formateDate(date)}</time>
           </dd>
         </dl>

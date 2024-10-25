@@ -30,7 +30,7 @@ export default function Home() {
           from morocco, I start with html on{" "}
           <span className="font-bold">08/26/2023</span> and I&apos;m currently
           learning{" "}
-          <span className="bg-neutral-300/60 font-bold px-1">
+          <span className="bg-card font-bold px-1">
             C/C++, algorithms & data structers and low level things
           </span>
           .
@@ -38,11 +38,11 @@ export default function Home() {
         <br />
         <p>
           I&apos;m good at{" "}
-          <span className="bg-neutral-300/60 font-bold">
+          <span className="bg-card font-bold">
             JS/TS, React/Next.js
           </span>{" "}
           and ovecourse{" "}
-          <span className="bg-neutral-300/60 font-bold">HTML and CSS</span>{" "}
+          <span className="bg-card font-bold">HTML and CSS</span>{" "}
           <span className="text-sm">(tailwind btw)</span>. I learned basics of
           backend in js but I still need practice.
         </p>
