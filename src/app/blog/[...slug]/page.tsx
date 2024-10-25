@@ -78,7 +78,7 @@ export default async function PostPage({ params }: PostPageProps) {
 	return (
 		<Container>
 			<Title title={post.title} />
-			<div className="flex justify-between items-center">
+			<div className="flex justify-between items-center px-1">
 				<dl>
 					<dt className="sr-only">Published On</dt>
 					<dd className="text-sm flex items-center gap-1">
