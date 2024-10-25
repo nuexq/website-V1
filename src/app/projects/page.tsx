@@ -17,14 +17,17 @@ export default function Projects() {
       </div>
       <div className="flex flex-col w-full gap-4 my-4">
         <ProjectCard
+          href="https://github.com/No0ne003/website"
           name="Portfolio"
           desc="This is my Portfolio build in next.js"
         />
         <ProjectCard
+          href="https://github.com/No0ne003/react-project"
           name="React Projects"
           desc="A collection of React small Projects"
         />
         <ProjectCard
+          href="https://github.com/No0ne003/simpleBlog"
           name="Simple Blog"
           desc="A collection of React small Projects and no wone kada dakdjf dakd"
         />
