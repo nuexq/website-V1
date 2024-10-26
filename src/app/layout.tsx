@@ -4,6 +4,7 @@ import "./globals.css";
 import { Footer } from "@/components/layout/Footer";
 import { siteConfig } from "@/config/site";
 import { Nav } from "@/components/layout/Nav";
+import { TerminalBar } from "@/components/TerminalBar";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -42,7 +43,10 @@ export default function RootLayout({
 					<main className="flex flex-col justify-start items-start pb-8 pt-6 md:pb-12 md:mt-10 lg:py-32 flex-1">
 						<div className="container mx-auto flex max-sm:flex-col">
 							<Nav />
-							{children}
+							<div className="flex flex-col gap-2 pt-6 border-t border-neutral-300 sm:border-0">
+								<TerminalBar />
+								{children}
+							</div>
 						</div>
 					</main>
 					<Footer />
