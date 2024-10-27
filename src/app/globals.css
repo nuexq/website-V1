@@ -37,6 +37,10 @@
     @apply border-border;
   }
 
+  body {
+    @apply bg-background text-foreground;
+  }
+
   *::-webkit-scrollbar {
     width: .5rem;
     height: .5rem;
@@ -49,18 +53,9 @@
   *::-webkit-scrollbar-track {
     @apply bg-neutral-300/40;
   }
-
-  body {
-    @apply bg-background text-foreground;
-  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
+/*Components*/
 @layer components {
   .info-card {
     @apply flex gap-4 min-w-52;
@@ -73,20 +68,30 @@
   .nav div>* {
     @apply px-3 py-2 hover:bg-border/60 font-geistMono w-44 cursor-pointer border-b border-border last:border-none;
   }
+}
 
-  .hint {
-    @apply px-3 py-2 border-[1px] border-solid border-l-4;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
+}
 
-  .hint.tip {
-    @apply bg-teal-800/10 text-teal-900 border-teal-900/40 dark:bg-teal-400/15 dark:text-teal-100 dark:border-teal-500/20;
-  }
+.heighlite {
+  @apply bg-card font-bold px-1;
+}
 
-  .hint.warn {
-    @apply bg-amber-800/10 text-amber-900 border-amber-900/40 dark:bg-amber-400/15 dark:text-amber-100 dark:border-amber-300/20;
-  }
+.hint {
+  @apply px-3 py-2 border-[1px] border-solid border-l-4;
+}
 
-  .hint.error {
-    @apply bg-rose-800/10 text-rose-900 border-rose-900/40 dark:bg-rose-400/15 dark:text-rose-100 dark:border-rose-300/20;
-  }
+.hint.tip {
+  @apply bg-teal-800/10 text-teal-900 border-teal-900/40 dark:bg-teal-400/15 dark:text-teal-100 dark:border-teal-500/20;
+}
+
+.hint.warn {
+  @apply bg-amber-800/10 text-amber-900 border-amber-900/40 dark:bg-amber-400/15 dark:text-amber-100 dark:border-amber-300/20;
+}
+
+.hint.error {
+  @apply bg-rose-800/10 text-rose-900 border-rose-900/40 dark:bg-rose-400/15 dark:text-rose-100 dark:border-rose-300/20;
 }
