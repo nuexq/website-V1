@@ -1,26 +1,26 @@
 import { useEffect, useState } from "react";
 
 export const TerminalTime = () => {
-	const [time, setTime] = useState(new Date());
+  const [time, setTime] = useState<string>("");
 
-	useEffect(() => {
-		const intervalId = setInterval(() => {
-			setTime(new Date());
-		}, 1000);
+  useEffect(() => {
+    const updateFormattedTime = () => {
+      const now = new Date();
+      setTime(
+        new Intl.DateTimeFormat("default", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hourCycle: "h23",
+        }).format(now),
+      );
+    };
 
-		return () => clearInterval(intervalId);
-	}, []);
+    updateFormattedTime();
+    const intervalId = setInterval(updateFormattedTime, 1000);
 
-	function formatTime() {
-		const hours = time.getHours();
-		const minutes = time.getMinutes();
-		const seconds = time.getSeconds();
+    return () => clearInterval(intervalId);
+  }, []);
 
-		return `${padZero(hours)}:${padZero(minutes)}:${padZero(seconds)}`;
-	}
-
-	function padZero(number: number) {
-		return number < 10 ? "0" + number : number;
-	}
-	return <div className="text-xs text-muted-foreground">{formatTime()}</div>;
+  return <div className="text-xs text-muted-foreground">{time}</div>;
 };
