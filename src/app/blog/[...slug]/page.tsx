@@ -90,7 +90,7 @@ export default async function PostPage({ params }: PostPageProps) {
 				</p>
 			</div>
 			<hr className="my-1" />
-			<div className="prose dark:prose-invert">
+			<div className="prose dark:prose-invert leading-relaxed">
 				<MDXContent code={post.body} />
 			</div>
 		</Container>
