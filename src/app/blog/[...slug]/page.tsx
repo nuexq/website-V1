@@ -8,7 +8,8 @@ import { MDXContent } from "@/components/mdx-components";
 import Container from "@/components/Container";
 import Title from "@/components/Title";
 import Link from "next/link";
-import { formateDate } from "@/lib/utils";
+import { cn, formateDate } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
 
 interface PostPageProps {
 	params: {
@@ -85,7 +86,12 @@ export default async function PostPage({ params }: PostPageProps) {
 						<time dateTime={post.date}>{formateDate(post.date)}</time>
 					</dd>
 				</dl>
-				<p className="font-geistMono hover:underline hover:underline-offset-4 text-sm">
+				<p
+					className={cn(
+						buttonVariants({ variant: "link" }),
+						"font-geistMono text-sm",
+					)}
+				>
 					<Link href="/blog">{`<=Back`}</Link>
 				</p>
 			</div>

@@ -95,3 +95,8 @@
 .hint.error {
   @apply bg-rose-800/10 text-rose-900 border-rose-900/40;
 }
+
+/*blog style*/
+.prose :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  @apply text-primary no-underline hover:underline-offset-4 hover:underline hover:decoration-dotted hover:decoration-1 hover:font-bold;
+}

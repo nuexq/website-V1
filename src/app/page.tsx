@@ -1,6 +1,8 @@
 import Container from "@/components/Container";
 import Title from "@/components/Title";
+import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -49,7 +51,7 @@ export default function Home() {
 				</p>
 				<br />
 				You can see random stuff about me in{" "}
-				<Link className="underline underline-offset-2" href="/random">
+				<Link className={cn(buttonVariants({ variant: "link" }), 'px-0')} href="/random">
 					here
 				</Link>
 				<br />
