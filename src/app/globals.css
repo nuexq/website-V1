@@ -77,7 +77,7 @@
 }
 
 .heighlite {
-  @apply bg-card font-bold px-1;
+  @apply bg-card font-bold  rounded-none;
 }
 
 .hint {
@@ -98,5 +98,5 @@
 
 /*blog style*/
 .prose :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
-  @apply text-primary underline underline-offset-4 decoration-dotted decoration-1 font-semibold;
+  @apply text-primary underline underline-offset-4 decoration-dotted decoration-1 font-semibold hover:bg-card;
 }

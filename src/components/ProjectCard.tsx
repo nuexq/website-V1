@@ -1,5 +1,7 @@
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { buttonVariants } from "./ui/button";
+import { siteConfig } from "@/config/site";
 
 export default function ProjectCard({
 	name,
@@ -7,16 +9,14 @@ export default function ProjectCard({
 	href,
 }: { name: string; desc: string; href: string }) {
 	return (
-		<div className="flex gap-5 sm:gap-24 justify-between items-center bg-card px-4 py-3 w-full">
-			<div className="flex flex-col gap-4 max-w-md">
-				<Link href={href}>
-					<h3 className="text-2xl font-geistMono">{name}</h3>
-				</Link>
-				<p className="max-sm:text-sm">{desc}</p>
-			</div>
-			<Link href={href} className="cursor-pointer self-end">
-				<GitHubLogoIcon />
+		<div className="text-sm space-x-1">
+			<Link
+				href={`${siteConfig.links.github}/${href}`}
+				className={cn(buttonVariants({ variant: "link" }))}
+			>
+				{name}:
 			</Link>
+			<div className="inline">{desc}</div>
 		</div>
 	);
 }

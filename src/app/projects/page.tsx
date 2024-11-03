@@ -1,37 +1,52 @@
 import Container from "@/components/Container";
 import ProjectCard from "@/components/ProjectCard";
 import Title from "@/components/Title";
+import { buttonVariants } from "@/components/ui/button";
+import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "[P}rojects",
-  description: "Collection of projects",
+	title: "[P}rojects",
+	description: "Collection of projects",
 };
 
 export default function Projects() {
-  return (
-    <Container>
-      <div className="flex-1 space-y-2">
-        <Title title="Projects" />
-        <p className="text-muted-foreground">Collection of projects</p>
-      </div>
-      <div className="flex flex-col w-full gap-4 my-4">
-        <ProjectCard
-          href="https://github.com/No0ne003/website"
-          name="Portfolio"
-          desc="This is my Portfolio build in next.js"
-        />
-        <ProjectCard
-          href="https://github.com/No0ne003/react-project"
-          name="React Projects"
-          desc="A collection of React small Projects"
-        />
-        <ProjectCard
-          href="https://github.com/No0ne003/simpleBlog"
-          name="Simple Blog"
-          desc="A collection of React small Projects and no wone kada dakdjf dakd"
-        />
-      </div>{" "}
-    </Container>
-  );
+	return (
+		<Container>
+			<div className="flex-1 space-y-2">
+				<Title title="Projects" />
+				<p className="text-muted-foreground text-sm">
+					You can see all my project in my{" "}
+					<Link
+						href={siteConfig.links.github}
+						className={cn(
+							buttonVariants({ variant: "link" }),
+							"text-muted-foreground",
+						)}
+					>
+						github
+					</Link>
+				</p>
+			</div>
+			<div className="flex flex-col gap-3 w-full my-4">
+				<ProjectCard
+					href="react-project"
+					name="React Projects"
+					desc="A collection of React small Projects."
+				/>
+				<ProjectCard
+					href="simpleBlog"
+					name="Simple Blog"
+					desc="A simple blog build with nextJs and Velite."
+				/>
+				<ProjectCard
+					href="website"
+					name="Website"
+					desc="This Website you are right now, build in next.js."
+				/>
+			</div>{" "}
+		</Container>
+	);
 }
