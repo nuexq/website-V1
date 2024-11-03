@@ -98,5 +98,5 @@
 
 /*blog style*/
 .prose :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
-  @apply text-primary no-underline hover:underline-offset-4 hover:underline hover:decoration-dotted hover:decoration-1 hover:font-bold;
+  @apply text-primary underline underline-offset-4 decoration-dotted decoration-1 font-semibold;
 }
