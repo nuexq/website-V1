@@ -5,14 +5,13 @@ import { usePathname } from "next/navigation";
 
 export const navLinks = [
 	{ href: "/", label: "Home" },
-	{ href: "/blog", label: "Blog" },
 	{ href: "/projects", label: "Projects" },
-	{ href: "/random", label: "Random" },
+	{ href: "/blog", label: "Blog" },
 ];
 
 export const Nav = () => {
 	const pathname = usePathname();
-  const pathnameArray = pathname.split('/');
+	const pathnameArray = pathname.split("/");
 
 	return (
 		<nav className="nav sm:border-r border-neutral-300">
@@ -23,7 +22,13 @@ export const Nav = () => {
 						key={link.href}
 						href={link.href}
 					>
-						<span className={pathname === link.href || `/${pathnameArray[1]}` === link.href ? "font-[900]" : ""}>
+						<span
+							className={
+								pathname === link.href || `/${pathnameArray[1]}` === link.href
+									? "font-[900]"
+									: ""
+							}
+						>
 							[{link.label.slice(0, 1)}]
 						</span>
 						<span>{link.label.slice(1, link.label.length)}</span>
