@@ -9,14 +9,14 @@ export default function ProjectCard({
 	href,
 }: { name: string; desc: string; href: string }) {
 	return (
-		<div className="text-sm space-x-1">
+		<li className="space-x-1 p-0 pt-1 m-0">
 			<Link
 				href={`${siteConfig.links.github}/${href}`}
-				className={cn(buttonVariants({ variant: "link" }))}
+				className={cn(buttonVariants({ variant: "link" }), 'text-base')}
 			>
 				{name}:
 			</Link>
 			<div className="inline">{desc}</div>
-		</div>
+		</li>
 	);
 }

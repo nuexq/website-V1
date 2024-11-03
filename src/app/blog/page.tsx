@@ -32,7 +32,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
 			<div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
 				<div className="flex-1 space-y-2">
 					<Title title="Blog" />
-					<p className="text-muted-foreground text-sm">simple blog ?</p>
+					<p className="text-muted-foreground text-sm">Simple blog ?</p>
 				</div>
 			</div>
 			<div className="grid grid-cols-12 gap-3 my-4">

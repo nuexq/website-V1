@@ -26,26 +26,30 @@ export default function Projects() {
 							"text-muted-foreground",
 						)}
 					>
-						github
+						github.
 					</Link>
 				</p>
 			</div>
-			<div className="flex flex-col gap-3 w-full my-4">
-				<ProjectCard
-					href="react-project"
-					name="React Projects"
-					desc="A collection of React small Projects."
-				/>
-				<ProjectCard
-					href="simpleBlog"
-					name="Simple Blog"
-					desc="A simple blog build with nextJs and Velite."
-				/>
-				<ProjectCard
-					href="website"
-					name="Website"
-					desc="This Website you are right now, build in next.js."
-				/>
+			<hr className="border-neutral-300 mt-4" />
+			<div className="w-full prose">
+				<p className="m-0">Here is some of my favorite project: </p>
+				<ul className="pl-3 pt-4 m-0">
+					<ProjectCard
+						href="react-project"
+						name="React Projects"
+						desc="A collection of React small Projects."
+					/>
+					<ProjectCard
+						href="simpleBlog"
+						name="Simple Blog"
+						desc="A simple blog build with nextJs and Velite."
+					/>
+					<ProjectCard
+						href="website"
+						name="Website"
+						desc="This Website you are right now, build in next.js."
+					/>
+				</ul>
 			</div>{" "}
 		</Container>
 	);
