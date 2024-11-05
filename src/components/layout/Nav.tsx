@@ -18,7 +18,6 @@ export const Nav = () => {
 			<div className="flex flex-col sm:sticky sm:top-5">
 				{navLinks.map((link) => (
 					<Link
-						// className={pathname === link.href ? "font-bold" : ""}
 						key={link.href}
 						href={link.href}
 					>

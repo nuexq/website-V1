@@ -16,6 +16,12 @@ const geistMono = localFont({
 	weight: "100 900",
 });
 
+const departureMono = localFont({
+  src: "./fonts/DepartureMono-Regular.woff",
+  variable: "--font-departure-mono",
+  weight: "100 900",
+});
+
 export const metadata: Metadata = {
 	title: siteConfig.name,
 	description: siteConfig.description,
@@ -36,7 +42,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen font-geist`}
+				className={`${geistSans.variable} ${geistMono.variable} ${departureMono.variable} antialiased min-h-screen font-geist`}
 			>
 				<div className="relative flex min-h-dvh flex-col">
 					<main className="flex flex-col justify-start items-start pb-8 pt-6 md:pb-12 md:mt-10 lg:py-32 flex-1">

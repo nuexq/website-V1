@@ -21,6 +21,7 @@ const config: Config = {
 			fontFamily: {
 				geistMono: ["var(--font-geist-mono)"],
 				geist: ["var(--font-geist-sans)"],
+				departureMono: ["var(--font-departure-mono)"],
 			},
 			colors: {
 				background: "hsl(var(--background))",

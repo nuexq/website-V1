@@ -9,7 +9,7 @@ export const TerminalBar = () => {
   const pathname = usePathname().split("/");
 
   return (
-    <Container className="p-0 flex-row justify-between items-center">
+    <Container className="p-0 flex-row justify-between items-center font-departureMono">
       <div className="text-[#5b6078]">
         <span className="hover:font-bold">
           <Link href="/">~</Link>
@@ -18,7 +18,7 @@ export const TerminalBar = () => {
           {pathname.map((path, index) => (
             <span key={index}>
               {path === "" ? null : (
-                <span className="hover:font-bold">
+                <span className="hover:bg-card">
                   <Link href={pathname.slice(0, index + 1).join("/")}>
                     {path}
                   </Link>

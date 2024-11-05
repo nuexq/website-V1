@@ -58,24 +58,29 @@ export default async function PostPage({ params }: PostPageProps) {
 
 	return (
 		<Container>
-			<Title title={post.title} />
-			<div className="flex justify-between items-center px-1">
-				<dl>
-					<dt className="sr-only">Published On</dt>
-					<dd className="text-sm flex items-center gap-1">
-						<time dateTime={post.date}>{formateDate(post.date)}</time>
-					</dd>
-				</dl>
-				<p
-					className={cn(
-						buttonVariants({ variant: "link" }),
-						"font-geistMono text-sm",
-					)}
-				>
-					<Link href="/blog">{`<=Back`}</Link>
-				</p>
+			<div className="flex flex-col gap-4">
+				<div className="flex flex-col gap-1 max-w-[80%]">
+					<Title title={post.title} className="font-geistMono" />
+					<dl>
+						<dt className="sr-only">Published On</dt>
+						<dd className="text-sm flex items-center gap-1 text-muted-foreground">
+							<time dateTime={post.date}>{formateDate(post.date)}</time>
+						</dd>
+					</dl>
+				</div>
+				<div className="flex justify-between items-center ">
+					<p className="text-sm">{post.description}</p>
+					<p
+						className={cn(
+							buttonVariants({ variant: "link" }),
+							"font-departureMono text-sm",
+						)}
+					>
+						<Link href="/blog">◄ Back</Link>
+					</p>
+				</div>
 			</div>
-			<hr className="my-1" />
+			<hr className="border-neutral-300" />
 			<div className="prose dark:prose-invert leading-relaxed">
 				<MDXContent code={post.body} />
 			</div>

@@ -7,7 +7,7 @@ export default function Title({
 }: { title: string; className?: string }) {
 	return (
 		<span
-			className={cn("text-2xl tracking-wide font-geistMono ", className)}
+			className={cn("text-2xl tracking-wide font-departureMono", className)}
 			{...props}
 		>
 			{title}
