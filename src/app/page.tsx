@@ -51,7 +51,10 @@ export default function Home() {
 				</p>
 				<br />
 				You can see random stuff about me in{" "}
-				<Link className={cn(buttonVariants({ variant: "link" }), 'px-0')} href="/random">
+				<Link
+					className={cn(buttonVariants({ variant: "link" }), "px-0")}
+					href="/random"
+				>
 					here
 				</Link>
 				<br />

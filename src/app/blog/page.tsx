@@ -30,10 +30,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
 	return (
 		<Container>
 			<div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
-				<div className="flex-1 space-y-2">
-					<Title title="Blog" />
-					<p className="text-muted-foreground text-sm">Simple blog ?</p>
-				</div>
+				<Title title="Blog" />
 			</div>
 			<div className="grid grid-cols-12 gap-3 my-4">
 				<div className="col-span-12 col-start-1">
