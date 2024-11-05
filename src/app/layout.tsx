@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Footer } from "@/components/layout/Footer";
 import { siteConfig } from "@/config/site";
 import { Nav } from "@/components/layout/Nav";
 import { TerminalBar } from "@/components/TerminalBar";
@@ -49,7 +48,6 @@ export default function RootLayout({
 							</div>
 						</div>
 					</main>
-					<Footer />
 				</div>
 			</body>
 		</html>
