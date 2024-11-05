@@ -77,7 +77,7 @@
 }
 
 .heighlite {
-  @apply bg-card font-bold  rounded-none;
+  @apply bg-card font-bold rounded-none;
 }
 
 .hint {
