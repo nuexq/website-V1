@@ -32,7 +32,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
 			<div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
 				<Title title="Blog" />
 			</div>
-			<div className="grid grid-cols-12 gap-3 my-4">
+			<div className="grid grid-cols-12 gap-3">
 				<div className="col-span-12 col-start-1">
 					<hr />
 					{displayPosts?.length > 0 ? (

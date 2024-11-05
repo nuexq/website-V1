@@ -17,7 +17,7 @@ export default function Projects() {
 		<Container>
 			<div className="flex-1 space-y-2">
 				<Title title="Projects" />
-				<p className="text-muted-foreground text-sm font-departureMono">
+				<p className="text-muted-foreground text-sm">
 					You can see all my project in my{" "}
 					<Link
 						href={siteConfig.links.github}

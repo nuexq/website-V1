@@ -15,7 +15,7 @@ export default function Home() {
 	return (
 		<Container>
 			<div>
-				<Title title="No0ne" />
+				<Title title="No0ne" className="font-departureMono" />
 			</div>
 			<div className="leading-relaxed">
 				<p>
