@@ -47,11 +47,11 @@
   }
 
   *::-webkit-scrollbar-thumb {
-    @apply bg-neutral-400/40;
+    @apply bg-neutral-400/60;
   }
 
   *::-webkit-scrollbar-track {
-    @apply bg-neutral-300/40;
+    @apply bg-background;
   }
 }
 

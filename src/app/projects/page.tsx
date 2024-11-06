@@ -33,7 +33,7 @@ export default function Projects() {
 			<hr className="border-neutral-300" />
 			<div className="w-full prose">
 				<p className="m-0">Here is some of my favorite project: </p>
-				<ul className="pt-4 m-0">
+				<ul className="pt-3 m-0">
 					<ProjectCard
 						href="react-project"
 						name="React Projects"
