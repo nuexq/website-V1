@@ -76,7 +76,7 @@ export default async function PostPage({ params }: PostPageProps) {
 							"font-departureMono text-sm",
 						)}
 					>
-						<Link href="/blog">◄ Back</Link>
+						<Link href="/writing">◄ Back</Link>
 					</p>
 				</div>
 			</div>
