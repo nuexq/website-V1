@@ -35,7 +35,7 @@ const KeyLogger: React.FC = () => {
 
 	return (
 		<div className="bg-black text-white font-departureMono fixed bottom-0 right-0 m-3 max-w-28">
-			<div className="flex flex-row-reverse gap-2 px-2 py-1 empty:p-0 whitespace-nowrap">
+			<div className="flex flex-row-reverse gap-2 px-2 py-1 empty:p-0 whitespace-nowrap overflow-x-hidden">
 				{keys}
 			</div>
 		</div>
