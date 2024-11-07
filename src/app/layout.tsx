@@ -4,6 +4,7 @@ import "./globals.css";
 import { siteConfig } from "@/config/site";
 import { Nav } from "@/components/layout/Nav";
 import { TerminalBar } from "@/components/TerminalBar";
+import { Hotkeys } from "@/components/Hotkeys";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -17,9 +18,9 @@ const geistMono = localFont({
 });
 
 const departureMono = localFont({
-  src: "./fonts/DepartureMono-Regular.woff",
-  variable: "--font-departure-mono",
-  weight: "100 900",
+	src: "./fonts/DepartureMono-Regular.woff",
+	variable: "--font-departure-mono",
+	weight: "100 900",
 });
 
 export const metadata: Metadata = {
@@ -44,6 +45,7 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} ${departureMono.variable} antialiased min-h-screen font-geist`}
 			>
+				<Hotkeys />
 				<div className="relative flex min-h-dvh flex-col">
 					<main className="flex flex-col justify-start items-start pb-8 pt-6 md:pb-12 md:mt-10 lg:py-32 flex-1">
 						<div className="container mx-auto flex max-sm:flex-col">
