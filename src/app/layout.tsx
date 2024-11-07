@@ -5,6 +5,7 @@ import { siteConfig } from "@/config/site";
 import { Nav } from "@/components/layout/Nav";
 import { TerminalBar } from "@/components/TerminalBar";
 import { Hotkeys } from "@/components/Hotkeys";
+import KeyLogger from "@/components/KeyLogger";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -57,6 +58,7 @@ export default function RootLayout({
 						</div>
 					</main>
 				</div>
+				<KeyLogger />
 			</body>
 		</html>
 	);
