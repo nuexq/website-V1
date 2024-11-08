@@ -15,7 +15,7 @@ export const Nav = () => {
 
 	return (
 		<nav className="nav sm:border-r border-neutral-300">
-			<div className="flex flex-col sm:sticky sm:top-5">
+			<div className="flex flex-col">
 				{navLinks.map((link) => (
 					<Link
 						key={link.href}
