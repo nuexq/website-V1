@@ -88,7 +88,7 @@
 	}
 }
 
-.heighlite {
+.highlight {
 	@apply bg-card font-bold rounded-none;
 }
 
@@ -111,4 +111,8 @@
 /*blog style*/
 .prose :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
 	@apply text-primary underline underline-offset-4 decoration-dotted decoration-1 font-semibold hover:bg-card;
+}
+
+.prose :where(u):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  @apply underline underline-offset-4 decoration-dotted decoration-1;
 }

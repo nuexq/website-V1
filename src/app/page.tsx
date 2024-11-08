@@ -1,10 +1,6 @@
 import Container from "@/components/Container";
 import Title from "@/components/Title";
-import { buttonVariants } from "@/components/ui/button";
-import { siteConfig } from "@/config/site";
-import { cn } from "@/lib/utils";
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
 	title: "[N]o0ne",
@@ -17,49 +13,42 @@ export default function Home() {
 			<div>
 				<Title title="No0ne" className="font-departureMono" />
 			</div>
-			<div className="leading-relaxed">
+			<div className="prose">
 				<p>
-					Hello I&apos;m {siteConfig.name} or No0ne003 a Front-End developer
-					from morocco, I start with html on{" "}
-					<span className="font-bold">08/26/2023</span> and I&apos;m currently
-					learning{" "}
-					<span className="heighlite">
-						C/C++, algorithms & data structers and low level things
+					I&apos;m a 16-year-old high school student from Morocco with{" "}
+					<span className="highlight">overthinking issues</span> and a{" "}
+					<span className="highlight">passion for learning</span>. I enjoy{" "}
+					<span className="highlight">programming, gaming, and reading</span>,
+					and I&apos;m currently learning <span className="highlight">C</span>. I
+					also love <span className="highlight">kickboxing</span>.
+				</p>
+
+				<h3>Tech</h3>
+				<p>
+					My focus is on web development, but lately, I&apos;ve been exploring{" "}
+					<span className="highlight">
+						algorithms, data structures, and low-level programming
 					</span>
-					.
+					. I&apos;m most comfortable with <span className="highlight">JS/TS</span>{" "}
+					and <u>HTML/CSS</u>, and I also know <u>Python</u> and <u>Lua</u>.
 				</p>
-				<br />
+
 				<p>
-					I&apos;m good at{" "}
-					<span className="heighlite">JS/TS, React/Next.js</span> and ovecourse{" "}
-					<span className="heighlite">HTML and CSS</span>{" "}
-					<span className="text-sm">(tailwind btw)</span>. I learned basics of
-					backend in js but I still need practice.
+					I use <span className="highlight">React</span> and{" "}
+					<span className="highlight">Next.js</span> for front-end development,{" "}
+					and <span className="highlight">Tailwind CSS</span> for styling. I
+					also have experience with{" "}
+					<span className="highlight">Node.js/Bun</span> and{" "}
+					<span className="highlight">MongoDB</span>.
 				</p>
-				<br />
+
+				<h3>Tools</h3>
 				<p>
-					I love using <span className="font-bold">Linux</span>{" "}
-					<span className="text-lg">(arch btw)</span> with Hyprland Window
-					Manager, Linux give me what I need as a programmer and it work very
-					well.
-					<br />I also sometimes Game on linux a simple games like stardew
-					valley, hollow knight, and I swear to god I play roblox just with
-					friends for fun.
-					<br />
-					I&apos;m also a <span className="font-bold">kick boxer</span> for like
-					a 1 year now and I love Calistanics.
+					My editor of choice is <span className="highlight">Neovim</span>, and
+					I run <span className="highlight">Arch Linux</span> as my OS. My
+					hardware is a <span className="highlight">Lenovo ThinkPad T460</span>{" "}
+					with a 15&quot; Full HD display and an Intel i5-6300U processor.
 				</p>
-				<br />
-				You can see random stuff about me in{" "}
-				<Link
-					className={cn(buttonVariants({ variant: "link" }), "px-0")}
-					href="/random"
-				>
-					here
-				</Link>
-				<br />
-				<br />
-				this is a tested portfolio I make it in 1 hour when the wifi is off.
 			</div>
 		</Container>
 	);
