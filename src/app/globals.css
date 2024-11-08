@@ -63,7 +63,7 @@
 	}
 
 	::selection {
-		@apply bg-foreground text-background;
+		@apply bg-card text-foreground;
 	}
 }
 
