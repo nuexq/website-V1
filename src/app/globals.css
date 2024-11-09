@@ -89,7 +89,7 @@
 }
 
 .highlight {
-	@apply bg-card font-bold rounded-none;
+	@apply bg-yellow-500/20 text-foreground font-bold rounded-none;
 }
 
 .hint {
@@ -110,7 +110,7 @@
 
 /*blog style*/
 .prose :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
-	@apply text-primary underline underline-offset-4 decoration-dotted decoration-1 font-semibold hover:bg-card;
+	@apply text-primary no-underline hover:underline hover:underline-offset-4 hover:decoration-dotted hover:decoration-1 font-semibold bg-card;
 }
 
 .prose :where(u):not(:where([class~="not-prose"], [class~="not-prose"] *)) {

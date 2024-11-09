@@ -73,7 +73,7 @@ export default async function PostPage({ params }: PostPageProps) {
 					<p
 						className={cn(
 							buttonVariants({ variant: "link" }),
-							"font-departureMono text-sm",
+							"font-departureMono text-sm bg-transparent",
 						)}
 					>
 						<Link href="/writing">◄ Back</Link>

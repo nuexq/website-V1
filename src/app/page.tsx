@@ -1,6 +1,7 @@
 import Container from "@/components/Container";
 import Title from "@/components/Title";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
 	title: "[N]o0ne",
@@ -15,40 +16,51 @@ export default function Home() {
 			</div>
 			<div className="prose">
 				<p>
-					I&apos;m a 16-year-old high school student from Morocco with{" "}
-					<span className="highlight">overthinking issues</span> and a{" "}
-					<span className="highlight">passion for learning</span>. I enjoy{" "}
-					<span className="highlight">programming, gaming, and reading</span>,
-					and I&apos;m currently learning <span className="highlight">C</span>. I
-					also love <span className="highlight">kickboxing</span>.
+					16-year-old student from Morocco. Driven by a{" "}
+					<span className="highlight">passion for learning</span> with{" "}
+					<span className="highlight">overthinking</span> issues. Into{" "}
+					<u>programming</u>, <u>gaming</u>, and <u>reading</u>, and currently
+					tackling <u>C</u>. and I kickbox.
 				</p>
-
 				<h3>Tech</h3>
 				<p>
-					My focus is on web development, but lately, I&apos;ve been exploring{" "}
-					<span className="highlight">
-						algorithms, data structures, and low-level programming
-					</span>
-					. I&apos;m most comfortable with <span className="highlight">JS/TS</span>{" "}
-					and <u>HTML/CSS</u>, and I also know <u>Python</u> and <u>Lua</u>.
+					Web-focused but exploring{" "}
+					<u>algorithms, data structures, and low-level programming</u>. My core
+					stack: <span className="highlight">JS/TS</span>, <u>HTML/CSS</u>, plus
+					some <u>Python</u> and <u>Lua</u>.
 				</p>
-
 				<p>
-					I use <span className="highlight">React</span> and{" "}
-					<span className="highlight">Next.js</span> for front-end development,{" "}
-					and <span className="highlight">Tailwind CSS</span> for styling. I
-					also have experience with{" "}
-					<span className="highlight">Node.js/Bun</span> and{" "}
-					<span className="highlight">MongoDB</span>.
+					Working with <span className="highlight">React</span>,{" "}
+					<span className="highlight">Next.js</span>, and{" "}
+					<span className="highlight">Tailwind CSS</span> for styling. Also
+					familiar with <u>Node.js/Bun</u> and <u>MongoDB</u>.
 				</p>
-
 				<h3>Tools</h3>
 				<p>
-					My editor of choice is <span className="highlight">Neovim</span>, and
-					I run <span className="highlight">Arch Linux</span> as my OS. My
-					hardware is a <span className="highlight">Lenovo ThinkPad T460</span>{" "}
-					with a 15&quot; Full HD display and an Intel i5-6300U processor.
+					Neovim as my primary editor. Arch Linux. Hardware:{" "}
+					<u>Lenovo ThinkPad T460</u> with an Intel i5-6300U.
 				</p>
+				<h3>Extra</h3>
+				<p>
+					I enjoy anime, TV, movies, and gaming. My favorite show has to be{" "}
+					<u>Breaking Bad</u>, but lately, I’ve really enjoyed{" "}
+					<u>Hajime no Ippo</u>, and I’m currently watching <u>DanDaDan</u>.
+					I’ll keep posting everything I watch or play each year on my{" "}
+					<Link href="/writing">writing</Link> page if you’re curious.
+				</p>
+				<p>
+					As for gaming, I’m into story-driven and challenging games. Favorites
+					include <u>Dark Souls 1</u> and <u>Silent Hill 2</u>,{" "}
+					<u>Stardew valley</u>, <u>Far Cry 3</u>, and lately, I’ve been diving
+					into <u>Portal 2</u>.
+				</p>
+				<p>
+					Let’s connect: <Link href="https://github.com/No0ne003">GitHub</Link>,{" "}
+					<Link href="https://www.twitter.com/No0ne003">Twitter</Link>, or
+					Discord at No0ne.003.
+				</p>
+				<hr className="border-neutral-300 my-4" />
+				<p className="text-sm">Thanks for stopping by!</p>
 			</div>
 		</Container>
 	);

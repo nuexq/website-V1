@@ -29,7 +29,7 @@ const PostCard = ({ slug, title, description, date }: PostItemProps) => {
         </dl>
         <Link
           href={"/" + slug}
-          className={cn(buttonVariants({ variant: "link" }), "py-0 font-departureMono")}
+          className={cn(buttonVariants({ variant: "link" }), "py-0 font-departureMono bg-transparent")}
         >
           Read ►
         </Link>
