@@ -16,7 +16,7 @@ export default function Home() {
 			</div>
 			<div className="prose">
 				<p>
-					16-year-old student from Morocco. Driven by a{" "}
+					16-year-old highschool student from the Philippines. I’m currently
 					<span className="highlight">passion for learning</span> with{" "}
 					<span className="highlight">overthinking</span> issues. Into{" "}
 					<u>programming</u>, <u>gaming</u>, and <u>reading</u>, and currently
