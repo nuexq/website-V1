@@ -20,7 +20,7 @@ export default function Home() {
 					<span className="highlight">passion for learning</span> with{" "}
 					<span className="highlight">overthinking</span> issues. Into{" "}
 					<u>programming</u>, <u>gaming</u>, and <u>reading</u>, and currently
-					tackling <u>C</u>. and I kickbox.
+					learning <u>C</u>. and I kickbox.
 				</p>
 				<h3>Tech</h3>
 				<p>
