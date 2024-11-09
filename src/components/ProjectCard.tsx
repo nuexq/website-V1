@@ -12,6 +12,7 @@ export default function ProjectCard({
 		<li className="space-x-1 p-0 pt-1 m-0 list-disc">
 			<Link
 				href={`${siteConfig.links.github}/${href}`}
+        target="_blank"
 				className={cn(
 					buttonVariants({ variant: "link" }),
 					"text-base !font-normal",

@@ -37,7 +37,7 @@ export default function Projects() {
 					<ProjectCard
 						href="react-project"
 						name="React Projects"
-						desc="A collection of React small Projects."
+						desc="A collection of small React Projects."
 					/>
 					<ProjectCard
 						href="simpleBlog"
@@ -45,9 +45,15 @@ export default function Projects() {
 						desc="A simple blog build with nextJs and Velite."
 					/>
 					<ProjectCard
+						href="dotfiles"
+						name="My dotfiles"
+						desc="My Arch linux hyprland dotfiles, also my neovim config."
+					/>
+
+					<ProjectCard
 						href="website"
 						name="Website"
-						desc="This Website you are right now, build in next.js."
+						desc="The first version of my personal website, build in next.js."
 					/>
 				</ul>
 			</div>{" "}
