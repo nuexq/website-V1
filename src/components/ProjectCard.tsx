@@ -1,6 +1,4 @@
-import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { buttonVariants } from "./ui/button";
 import { siteConfig } from "@/config/site";
 
 export default function ProjectCard({
@@ -13,10 +11,6 @@ export default function ProjectCard({
 			<Link
 				href={`${siteConfig.links.github}/${href}`}
         target="_blank"
-				className={cn(
-					buttonVariants({ variant: "link" }),
-					"text-base !font-normal",
-				)}
 			>
 				{name}:
 			</Link>

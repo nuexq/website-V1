@@ -60,7 +60,7 @@ export default async function PostPage({ params }: PostPageProps) {
 		<Container>
 			<div className="flex flex-col gap-4">
 				<div className="flex flex-col gap-1 max-w-[80%]">
-					<Title title={post.title} className="font-geistMono" />
+					<Title title={post.title} className="font-geistMono text-3xl" />
 					<dl>
 						<dt className="sr-only">Published On</dt>
 						<dd className="text-sm flex items-center gap-1 text-muted-foreground">
@@ -70,12 +70,7 @@ export default async function PostPage({ params }: PostPageProps) {
 				</div>
 				<div className="flex justify-between items-center ">
 					<p className="text-sm">{post.description}</p>
-					<p
-						className={cn(
-							buttonVariants({ variant: "link" }),
-							"font-departureMono text-sm text-foreground bg-transparent",
-						)}
-					>
+					<p className="text-sm font-departureMono">
 						<Link href="/writing">◄ Back</Link>
 					</p>
 				</div>

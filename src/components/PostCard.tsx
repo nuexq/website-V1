@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { buttonVariants } from "./ui/button";
-import { cn, formateDate } from "@/lib/utils";
+import { formateDate } from "@/lib/utils";
 
 interface PostItemProps {
   slug: string;
@@ -29,7 +28,7 @@ const PostCard = ({ slug, title, description, date }: PostItemProps) => {
         </dl>
         <Link
           href={"/" + slug}
-          className={cn(buttonVariants({ variant: "link" }), "py-0 font-departureMono text-foreground bg-transparent")}
+          className="text-sm font-departureMono"
         >
           Read ►
         </Link>

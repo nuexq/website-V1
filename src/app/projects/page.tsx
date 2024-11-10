@@ -30,7 +30,6 @@ export default function Projects() {
 					</Link>
 				</p>
 			</div>
-			<hr className="border-neutral-300" />
 			<div className="w-full prose">
 				<p className="m-0">Here is some of my favorite project: </p>
 				<ul className="pt-3 m-0">
