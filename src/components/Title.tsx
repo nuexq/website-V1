@@ -6,11 +6,11 @@ export default function Title({
 	...props
 }: { title: string; className?: string }) {
 	return (
-		<span
+		<h1
 			className={cn("text-2xl font-geistMono tracking-wide", className)}
 			{...props}
 		>
 			{title}
-		</span>
+		</h1>
 	);
 }
