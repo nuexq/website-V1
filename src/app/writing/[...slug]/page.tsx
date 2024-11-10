@@ -8,8 +8,7 @@ import { MDXContent } from "@/components/mdx-components";
 import Container from "@/components/Container";
 import Title from "@/components/Title";
 import Link from "next/link";
-import { cn, formateDate } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
+import { formateDate } from "@/lib/utils";
 
 interface PostPageProps {
 	params: {
@@ -58,9 +57,9 @@ export default async function PostPage({ params }: PostPageProps) {
 
 	return (
 		<Container>
-			<div className="flex flex-col gap-4">
+			<div className="flex flex-col gap-4 mb-6">
 				<div className="flex flex-col gap-1 max-w-[80%]">
-					<Title title={post.title} className="font-geistMono text-3xl" />
+					<Title title={post.title} className="font-geistMono " />
 					<dl>
 						<dt className="sr-only">Published On</dt>
 						<dd className="text-sm flex items-center gap-1 text-muted-foreground">
@@ -75,7 +74,7 @@ export default async function PostPage({ params }: PostPageProps) {
 					</p>
 				</div>
 			</div>
-			<hr className="border-neutral-300" />
+			<hr className="border-neutral-300 mb-6" />
 			<div className="prose dark:prose-invert leading-relaxed">
 				<MDXContent code={post.body} />
 			</div>

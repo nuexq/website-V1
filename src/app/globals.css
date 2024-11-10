@@ -81,7 +81,7 @@
 }
 
 .highlight {
-  @apply bg-card text-foreground font-bold rounded-none;
+  @apply bg-card text-foreground font-bold rounded-none before:content-['`'] after:content-['`'];
 }
 
 .hint {
