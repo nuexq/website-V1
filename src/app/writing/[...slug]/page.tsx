@@ -74,7 +74,7 @@ export default async function PostPage({ params }: PostPageProps) {
 					</p>
 				</div>
 			</div>
-			<hr className="border-neutral-300 mb-6" />
+			<hr className="border-border mb-6" />
 			<div className="prose dark:prose-invert leading-relaxed">
 				<MDXContent code={post.body} />
 			</div>

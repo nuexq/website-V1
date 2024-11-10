@@ -51,7 +51,7 @@ export default function RootLayout({
 					<main className="flex flex-col justify-start items-start pb-8 pt-6 md:pb-12 md:mt-10 lg:py-32 flex-1">
 						<div className="container mx-auto flex max-sm:flex-col">
 							<Nav />
-							<div className="flex flex-col gap-2 pt-6 border-t border-neutral-300 sm:border-0">
+							<div className="flex flex-col gap-2 pt-6 border-t border-border sm:border-0">
 								<TerminalBar />
 								{children}
 							</div>

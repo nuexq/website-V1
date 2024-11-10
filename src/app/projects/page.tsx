@@ -31,7 +31,7 @@ export default function Projects() {
 				</p>
 			</div>
 			<div className="w-full prose">
-				<hr className="border-neutral-300 mb-3" />
+				<hr className="border-border mb-3" />
 				<p className="m-0">Here is some of my favorite project: </p>
 				<ul className="pt-3 m-0">
 					<ProjectCard
