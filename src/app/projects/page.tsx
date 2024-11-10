@@ -21,10 +21,7 @@ export default function Projects() {
 					You can see all my project in my{" "}
 					<Link
 						href={siteConfig.links.github}
-						className={cn(
-							buttonVariants({ variant: "link" }),
-							"text-muted-foreground",
-						)}
+						className={cn(buttonVariants({ variant: "link" }))}
 					>
 						github.
 					</Link>
