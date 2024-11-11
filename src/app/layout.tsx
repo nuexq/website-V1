@@ -6,6 +6,7 @@ import { Nav } from "@/components/layout/Nav";
 import { TerminalBar } from "@/components/TerminalBar";
 import { Hotkeys } from "@/components/Hotkeys";
 import KeyLogger from "@/components/KeyLogger";
+import Script from "next/script";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -40,6 +41,14 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+				<Script
+					src="https://cloud.umami.is/script.js"
+					data-website-id="92cc1a5b-a955-4781-8c79-6e2a84ff4ad2"
+					strategy="afterInteractive"
+					defer
+				/>
+			</head>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} ${departureMono.variable} antialiased min-h-screen font-geist`}
 			>
