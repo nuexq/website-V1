@@ -87,15 +87,6 @@
   @apply bg-rose-800/10 text-rose-900 border-rose-900/40;
 }
 
-/*blog style*/
-.prose :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
-  @apply underline underline-offset-4 decoration-dotted decoration-1 font-semibold text-blue-600 hover:bg-blue-500/10;
-}
-
-.prose :where(u):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
-  @apply underline underline-offset-4 decoration-dotted decoration-1;
-}
-
 .prose {
 
   h1,
@@ -109,6 +100,14 @@
 
   hr {
     @apply border-border border-[0.5px];
+  }
+
+  u {
+    @apply underline underline-offset-4 decoration-dotted decoration-1;
+  }
+
+  a {
+    @apply underline underline-offset-4 decoration-dotted decoration-1 font-semibold text-blue-600 hover:bg-blue-500/10;
   }
 }
 
