@@ -12,7 +12,7 @@ export default function Home() {
 	return (
 		<Container>
 			<div className="mb-6">
-				<Title title="No0ne" className="font-departureMono" />
+				<Title title="Noθne" className="font-departureMono" />
 			</div>
 			<div className="prose">
 				<p>
