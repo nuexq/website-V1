@@ -27,8 +27,8 @@ export default function Projects() {
 					</Link>
 				</p>
 			</div>
+			<hr className="border-border mb-3" />
 			<div className="w-full prose">
-				<hr className="border-border mb-3" />
 				<p className="m-0">Here is some of my favorite project: </p>
 				<ul className="pt-3 m-0">
 					<ProjectCard

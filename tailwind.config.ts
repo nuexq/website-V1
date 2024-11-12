@@ -22,6 +22,7 @@ const config: Config = {
 				geistMono: ["var(--font-geist-mono)"],
 				geist: ["var(--font-geist-sans)"],
 				departureMono: ["var(--font-departure-mono)"],
+        lora: ["var(--font-lora)"],
 			},
 			colors: {
 				background: "hsl(var(--background))",

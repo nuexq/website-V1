@@ -7,6 +7,8 @@ import { TerminalBar } from "@/components/TerminalBar";
 import { Hotkeys } from "@/components/Hotkeys";
 import KeyLogger from "@/components/KeyLogger";
 import Script from "next/script";
+import { Lora } from "next/font/google";
+import Container from "@/components/Container";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -23,6 +25,12 @@ const departureMono = localFont({
 	src: "./fonts/DepartureMono-Regular.woff",
 	variable: "--font-departure-mono",
 	weight: "100 900",
+});
+
+const lora = Lora({
+	weight: ["400", "500", "600", "700"], // Select the weights you need
+	variable: "--font-lora",
+	subsets: ["latin"], // Add subsets if needed
 });
 
 export const metadata: Metadata = {
@@ -50,14 +58,14 @@ export default function RootLayout({
 				/>
 			</head>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} ${departureMono.variable} antialiased min-h-screen font-geist`}
+				className={`${geistSans.variable} ${geistMono.variable} ${departureMono.variable} ${lora.variable} antialiased min-h-screen font-geist`}
 			>
 				<Hotkeys />
 				<div className="relative flex min-h-dvh flex-col">
 					<main className="flex flex-col justify-start items-start pb-8 pt-6 md:pb-12 md:mt-10 lg:py-32 flex-1">
-						<div className="container mx-auto flex max-sm:flex-col">
+						<div className="container mx-auto flex flex-col sm:flex-row">
 							<Nav />
-							<div className="flex flex-col gap-2 pt-6 border-t border-border sm:border-0">
+							<div className="flex flex-col gap-2 border-t border-border sm:border-0 max-sm:pt-6">
 								<TerminalBar />
 								{children}
 							</div>
