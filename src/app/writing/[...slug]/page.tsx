@@ -36,7 +36,7 @@ export async function generateMetadata({
 	ogSearchParams.set("title", post.title);
 
 	return {
-		title: `${post.title} | No0ne`,
+		title: `${post.title}`,
 		description: post.description,
 		authors: { name: siteConfig.author },
 	};
@@ -57,15 +57,16 @@ export default async function PostPage({ params }: PostPageProps) {
 
 	return (
 		<Container>
-			<div className="flex flex-col gap-4 mb-6">
+			<div className="flex flex-col gap-3 mb-6">
 				<div className="flex flex-col gap-1 max-w-[80%]">
 					<Title title={post.title} className="font-geistMono " />
 					<dl>
 						<dt className="sr-only">Published On</dt>
-						<dd className="text-sm flex items-center gap-1 text-muted-foreground">
+						<dd className="text-xs flex items-center gap-1 text-muted-foreground">
 							<time dateTime={post.date}>{formateDate(post.date)}</time>
 						</dd>
 					</dl>
+
 				</div>
 				<div className="flex justify-between items-center ">
 					<p className="text-sm">{post.description}</p>
