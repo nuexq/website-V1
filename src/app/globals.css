@@ -67,16 +67,6 @@
   }
 }
 
-/*Components*/
-@layer components {
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
 .highlight {
   @apply bg-card text-foreground font-bold rounded-none before:content-['`'] after:content-['`'];
 }
@@ -125,4 +115,10 @@
 .subheading-anchor {
   color: var(--tw-prose-links);
   @apply bg-transparent hover:bg-transparent;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
