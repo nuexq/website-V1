@@ -106,14 +106,14 @@
     @apply underline underline-offset-4 decoration-dotted decoration-1;
   }
 
+  .subheading-anchor {
+    color: var(--tw-prose-links);
+    @apply bg-transparent hover:bg-transparent no-underline;
+  }
+
   a {
     @apply underline underline-offset-4 decoration-dotted decoration-1 font-semibold text-blue-600 hover:bg-blue-500/10;
   }
-}
-
-.subheading-anchor {
-  color: var(--tw-prose-links);
-  @apply bg-transparent hover:bg-transparent;
 }
 
 @layer utilities {
