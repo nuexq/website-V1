@@ -34,7 +34,7 @@ export async function generateMetadata({
 
 	const ogSearchParams = new URLSearchParams();
 	ogSearchParams.set("title", post.title);
-	ogSearchParams.set("date", formamateDate(post.date));
+	ogSearchParams.set("date", formateDate(post.date));
 
 	return {
 		title: `${post.title}`,
