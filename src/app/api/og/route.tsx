@@ -34,7 +34,7 @@ export async function GET(req: NextRequest) {
 				<div tw="flex flex-col flex-wrap h-full w-full">
 					<div tw="flex justify-between items-center text-2xl text-neutral-600 w-full">
 						<span>~/writing/{title.split(" ").join("-").toLowerCase()}</span>
-            <span>{date.split("/").join(":")}</span>
+            <span>{date.split("-").join(":")}</span>
 					</div>
 					<h1 tw="text-9xl mt-2">{title}</h1>
 				</div>
