@@ -39,6 +39,26 @@ export async function generateMetadata({
 		title: `${post.title}`,
 		description: post.description,
 		authors: { name: siteConfig.author },
+		openGraph: {
+			title: post.title,
+			description: post.description,
+			type: "article",
+			url: post.slug,
+			images: [
+				{
+					url: `/api/og?${ogSearchParams.toString()}`,
+					width: 1200,
+					height: 630,
+					alt: post.title,
+				},
+			],
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: post.title,
+			description: post.description,
+			images: [`/api/og?${ogSearchParams.toString()}`],
+		},
 	};
 }
 
@@ -66,7 +86,6 @@ export default async function PostPage({ params }: PostPageProps) {
 							<time dateTime={post.date}>{formateDate(post.date)}</time>
 						</dd>
 					</dl>
-
 				</div>
 				<div className="flex justify-between items-center ">
 					<p>{post.description}</p>
