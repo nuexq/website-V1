@@ -24,7 +24,7 @@ export const Hotkeys = () => {
   useHotkeys([["shift+G", () => window.scrollTo(0, document.body.scrollHeight)]]);
 
   // Scroll to bottom with gg
-  useHotkeys([["g+g", () => window.scrollTo(0, 0)]]);
+  useHotkeys([["G", () => window.scrollTo(0, 0)]]);
 
   return null;
 };
