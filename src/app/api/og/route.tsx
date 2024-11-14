@@ -31,7 +31,7 @@ export async function GET(req: NextRequest) {
 				style={{ fontFamily: "Geist" }}
 			>
 				<div tw="flex flex-col flex-wrap h-full w-full">
-					<div tw="flex text-xl text-neutral-600 font-sans">
+					<div tw="flex text-3xl text-neutral-600 font-sans">
 						<span>~/writing/{title.split(" ").join("-").toLowerCase()}</span>
 					</div>
 					<h1 tw="text-9xl m-0 max-w-2xl">{title}</h1>
