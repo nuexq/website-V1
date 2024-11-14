@@ -23,6 +23,7 @@ async function loadGoogleFont(font: string, text: string) {
 export async function GET(req: NextRequest) {
 	const { searchParams } = new URL(req.url);
 	const title = searchParams.get("title") || "No0ne";
+  const date = searchParams.get("date") || "2024-01-01";
 
 	try {
 		return new ImageResponse(
@@ -31,10 +32,11 @@ export async function GET(req: NextRequest) {
 				style={{ fontFamily: "Geist" }}
 			>
 				<div tw="flex flex-col flex-wrap h-full w-full">
-					<div tw="flex text-3xl text-neutral-600 font-sans">
+					<div tw="flex justify-between items-center text-2xl text-neutral-600 font-sans">
 						<span>~/writing/{title.split(" ").join("-").toLowerCase()}</span>
+            <span>{date.split("/").join(":")}</span>
 					</div>
-					<h1 tw="text-9xl mt-2 max-w-2xl">{title}</h1>
+					<h1 tw="text-9xl mt-2">{title}</h1>
 				</div>
 			</div>,
 			{
