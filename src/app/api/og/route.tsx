@@ -32,7 +32,7 @@ export async function GET(req: NextRequest) {
 				style={{ fontFamily: "Geist" }}
 			>
 				<div tw="flex flex-col flex-wrap h-full w-full">
-					<div tw="flex justify-between items-center text-2xl text-neutral-600 font-sans">
+					<div tw="flex justify-between items-center text-2xl text-neutral-600 w-full">
 						<span>~/writing/{title.split(" ").join("-").toLowerCase()}</span>
             <span>{date.split("/").join(":")}</span>
 					</div>
