@@ -4,12 +4,12 @@ import { useRouter } from "next/navigation";
 import { useHotkeys } from "@mantine/hooks";
 
 export const Hotkeys = () => {
-	const router = useRouter();
+  const router = useRouter();
 
-	// Navigation shortcuts
-	useHotkeys([["H", () => router.push(`/`)]]);
-	useHotkeys([["P", () => router.push(`/projects`)]]);
-	useHotkeys([["W", () => router.push(`/writing`)]]);
+  // Navigation shortcuts
+  useHotkeys([["H", () => router.push(`/`)]]);
+  useHotkeys([["P", () => router.push(`/projects`)]]);
+  useHotkeys([["W", () => router.push(`/writing`)]]);
 
   // Vim-like shortcuts
   // scroll up-down
@@ -20,5 +20,11 @@ export const Hotkeys = () => {
   useHotkeys([["D", () => window.scrollBy(0, 300)]]);
   useHotkeys([["U", () => window.scrollBy(0, -300)]]);
 
-	return null;
+  // Scroll to top with gg
+  useHotkeys([["shift+G", () => window.scrollTo(0, document.body.scrollHeight)]]);
+
+  // Scroll to bottom with gg
+  useHotkeys([["g+g", () => window.scrollTo(0, 0)]]);
+
+  return null;
 };
