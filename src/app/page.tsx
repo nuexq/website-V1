@@ -19,19 +19,18 @@ export default function Home() {
 					16-year-old highschool student from the morocco. with a{" "}
 					<span className="highlight">passion for learning</span> and{" "}
 					<span className="highlight">overthinking</span> issues. Into{" "}
-					<u>programming</u>, <u>gaming</u>, and <u>reading</u>, and currently
-					learning <u>C</u>. and I kickbox.
+					<u>programming</u>, <u>gaming</u>, and <u>reading</u>, and I kickbox.
 				</p>
 				<h3>Tech</h3>
 				<p>
 					Web-focused but exploring{" "}
-					<u>algorithms, data structures, and low-level programming</u>. My core
-					stack: <span className="highlight">JS/TS</span>, <u>HTML/CSS</u>, plus
-					some <u>Python</u> and <u>Lua</u>.
+					<u>algorithms, data structures, and low-level programming</u>. I know:{" "}
+					<span className="highlight">JS/TS</span>, and currently practicing{" "}
+					<u>C</u>, plus I know kinda <u>Python</u> and <u>Lua</u>.
 				</p>
 				<p>
-					Working with <span className="highlight">React, Next.js</span>. Also
-					familiar with Node.js/Bun and Express, MongoDB and mongoose.
+					Working with <span className="highlight">React | Next.js</span>. Also
+					familiar with Node.js/Bun, Express and MongoDB/mongoose.
 				</p>
 				<h3>Tools</h3>
 				<p>
@@ -49,12 +48,16 @@ export default function Home() {
 				<p>
 					As for gaming, I’m into story-driven and challenging games. Favorites
 					include <u>Dark Souls 1</u> and <u>Silent Hill 2</u>,{" "}
-					<u>Stardew valley</u>, <u>Far Cry 3</u>.{" "}
+					<u>Stardew valley</u>, <u>Far Cry 3</u>. I love calisthenics and I
+					want to improve in it (still 8 sec at L-sit).
 				</p>
 				<p>
 					Let’s connect: <Link href="https://github.com/No0ne003">GitHub</Link>,{" "}
-					<Link href="https://www.twitter.com/No0ne003">Twitter</Link>,
-					Discord at No0ne.003. <Link href='https://ctp-webr.ing/no0ne/previous'>◄ </Link><Link href='https://ctp-webr.ing/'>webring</Link><Link href='https://ctp-webr.ing/no0ne/next'> ►</Link>
+					<Link href="https://www.twitter.com/No0ne003">Twitter</Link>, Discord
+					at No0ne.003.{" "}
+					<Link href="https://ctp-webr.ing/no0ne/previous">◄ </Link>
+					<Link href="https://ctp-webr.ing/">webring</Link>
+					<Link href="https://ctp-webr.ing/no0ne/next"> ►</Link>
 				</p>
 				<hr className="border-border my-4" />
 				<p className="text-sm">Thanks for stopping by!</p>
