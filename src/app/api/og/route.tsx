@@ -34,7 +34,7 @@ export async function GET(req: NextRequest) {
 					<div tw="flex text-3xl text-neutral-600 font-sans">
 						<span>~/writing/{title.split(" ").join("-").toLowerCase()}</span>
 					</div>
-					<h1 tw="text-8xl m-0 max-w-2xl">writing - {title}</h1>
+					<h1 tw="text-8xl mt-2 max-w-2xl">writing - {title}</h1>
 				</div>
 			</div>,
 			{
