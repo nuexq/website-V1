@@ -22,6 +22,7 @@ export default function Projects() {
 					<Link
 						href={siteConfig.links.github}
 						className={cn(buttonVariants({ variant: "link" }))}
+						target="_blank"
 					>
 						github.
 					</Link>
