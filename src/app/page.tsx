@@ -52,9 +52,15 @@ export default function Home() {
 					want to improve in it (still 8 sec at L-sit).
 				</p>
 				<p>
-					Let’s connect: <Link href="https://github.com/No0ne003">GitHub</Link>,{" "}
-					<Link href="https://www.twitter.com/No0ne003">Twitter</Link>, Discord
-					at No0ne.003.{" "}
+					Let’s connect:{" "}
+					<Link href="https://github.com/No0ne003" target="_blank">
+						GitHub
+					</Link>
+					,{" "}
+					<Link href="https://www.twitter.com/No0ne003" target="_blank">
+						Twitter
+					</Link>
+					, Discord at No0ne.003.{" "}
 					<Link href="https://ctp-webr.ing/no0ne/previous">◄ </Link>
 					<Link href="https://ctp-webr.ing/">webring</Link>
 					<Link href="https://ctp-webr.ing/no0ne/next"> ►</Link>
