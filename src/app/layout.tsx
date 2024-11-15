@@ -8,6 +8,7 @@ import { Hotkeys } from "@/components/Hotkeys";
 import KeyLogger from "@/components/KeyLogger";
 import Script from "next/script";
 import { Lora } from "next/font/google";
+import Container from "@/components/Container";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -61,8 +62,8 @@ export default function RootLayout({
 			>
 				<Hotkeys />
 				<div className="relative flex min-h-dvh flex-col">
-					<main className="flex flex-col justify-start items-start pb-8 pt-6 md:pb-12 md:mt-10 lg:py-32 flex-1">
-						<div className="container mx-auto flex flex-col sm:flex-row">
+					<main className="flex container mx-auto justify-start items-start pb-8 pt-6 md:pb-12 md:mt-10 lg:py-32">
+						<div className="flex flex-col sm:flex-row flex-1">
 							<Nav />
 							<div className="flex flex-col gap-2 border-t border-border sm:border-0 max-sm:pt-6">
 								<TerminalBar />
