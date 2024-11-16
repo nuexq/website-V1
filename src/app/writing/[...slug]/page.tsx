@@ -26,8 +26,7 @@ async function getPostFromParams(params: PostPageProps["params"]) {
 export async function generateMetadata(
 	props: PostPageProps,
 ): Promise<Metadata> {
-	const params = await props.params;
-	const post = await getPostFromParams(params);
+	const post = await getPostFromParams(props.params);
 
 	if (!post) {
 		return {};
@@ -71,8 +70,7 @@ export async function generateStaticParams(): Promise<
 }
 
 export default async function PostPage(props: PostPageProps) {
-	const params = await props.params;
-	const post = await getPostFromParams(params);
+	const post = await getPostFromParams(props.params);
 
 	if (!post || !post.published) {
 		notFound();
