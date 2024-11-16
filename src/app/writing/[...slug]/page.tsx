@@ -11,9 +11,9 @@ import Link from "next/link";
 import { formateDate } from "@/lib/utils";
 
 interface PostPageProps {
-	params: Promise<{
+	params: {
 		slug: string[];
-	}>;
+	};
 }
 
 async function getPostFromParams(params: PostPageProps["params"]) {
@@ -23,19 +23,21 @@ async function getPostFromParams(params: PostPageProps["params"]) {
 	return post;
 }
 
-export async function generateMetadata(props: PostPageProps): Promise<Metadata> {
-    const params = await props.params;
-    const post = await getPostFromParams(params);
+export async function generateMetadata(
+	props: PostPageProps,
+): Promise<Metadata> {
+	const params = await props.params;
+	const post = await getPostFromParams(params);
 
-    if (!post) {
+	if (!post) {
 		return {};
 	}
 
-    const ogSearchParams = new URLSearchParams();
-    ogSearchParams.set("title", post.title);
-    ogSearchParams.set("date", formateDate(post.date));
+	const ogSearchParams = new URLSearchParams();
+	ogSearchParams.set("title", post.title);
+	ogSearchParams.set("date", formateDate(post.date));
 
-    return {
+	return {
 		title: `${post.title}`,
 		description: post.description,
 		authors: { name: siteConfig.author },
@@ -69,14 +71,14 @@ export async function generateStaticParams(): Promise<
 }
 
 export default async function PostPage(props: PostPageProps) {
-    const params = await props.params;
-    const post = await getPostFromParams(params);
+	const params = await props.params;
+	const post = await getPostFromParams(params);
 
-    if (!post || !post.published) {
+	if (!post || !post.published) {
 		notFound();
 	}
 
-    return (
+	return (
 		<Container>
 			<div className="flex flex-col gap-3 mb-6">
 				<div className="flex flex-col gap-1 max-w-[80%]">
