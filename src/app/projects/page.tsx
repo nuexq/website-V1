@@ -21,10 +21,10 @@ export default function Projects() {
 					You can see all my project in my{" "}
 					<Link
 						href={siteConfig.links.github}
-						className={cn(buttonVariants({ variant: "link" }))}
+						className={cn(buttonVariants({ variant: "link" }), "text-foreground")}
 						target="_blank"
 					>
-						github.
+						github
 					</Link>
 				</p>
 			</div>
