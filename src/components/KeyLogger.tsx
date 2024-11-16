@@ -1,7 +1,7 @@
 "use client";
 
 import { Space } from "lucide-react";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, type JSX } from "react";
 
 const KeyLogger: React.FC = () => {
 	const [keys, setKeys] = useState<JSX.Element[]>([]);

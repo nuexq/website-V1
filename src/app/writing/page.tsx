@@ -13,21 +13,22 @@ export const metadata: Metadata = {
 const POST_PER_PAGE = 5;
 
 interface BlogPageProps {
-	searchParams: {
+	searchParams: Promise<{
 		page?: string;
-	};
+	}>;
 }
 
-export default async function BlogPage({ searchParams }: BlogPageProps) {
-	const currentPage = Number(searchParams?.page) || 1;
-	const sortedPosts = sortPosts(posts.filter((post) => post.published));
+export default async function BlogPage(props: BlogPageProps) {
+    const searchParams = await props.searchParams;
+    const currentPage = Number(searchParams?.page) || 1;
+    const sortedPosts = sortPosts(posts.filter((post) => post.published));
 
-	const displayPosts = sortedPosts.slice(
+    const displayPosts = sortedPosts.slice(
 		POST_PER_PAGE * (currentPage - 1),
 		POST_PER_PAGE * currentPage,
 	);
 
-	return (
+    return (
 		<Container>
 			<div className="space-y-2 mb-6">
 				<Title title="Writing" />
