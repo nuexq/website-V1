@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import Container from "./Container";
 import { usePathname } from "next/navigation";
 import { TerminalTime } from "./TerminalTime";
+import Container from "@/components/Container";
 
 export const TerminalBar = () => {
   const pathname = usePathname().split("/");
