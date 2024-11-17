@@ -21,7 +21,10 @@ export default function Projects() {
 					You can see all my project in my{" "}
 					<Link
 						href={siteConfig.links.github}
-						className={cn(buttonVariants({ variant: "link" }), "text-foreground")}
+						className={cn(
+							buttonVariants({ variant: "link" }),
+							"text-foreground",
+						)}
 						target="_blank"
 					>
 						github
@@ -29,31 +32,34 @@ export default function Projects() {
 				</p>
 			</div>
 			<hr className="border-border mb-3" />
-			<div className="w-full prose">
-				<p className="m-0">Here is some of my favorite project: </p>
-				<ul className="pt-3 m-0">
+			<div className="w-full flex flex-col gap-3">
+				<div className="flex flex-col gap-6">
 					<ProjectCard
 						href="react-project"
 						name="React Projects"
 						desc="A collection of small React Projects."
+						stack="React"
+            website="no0ne003.github.io/React-Projects/"
 					/>
 					<ProjectCard
 						href="simpleBlog"
 						name="Simple Blog"
 						desc="A simple blog build with nextJs and Velite."
+						stack="NextJs, Velite"
+            website="simpleblog003.vercel.app/"
 					/>
 					<ProjectCard
 						href="dotfiles"
 						name="My dotfiles"
 						desc="My Arch linux hyprland dotfiles, also my neovim config."
 					/>
-
 					<ProjectCard
 						href="website"
 						name="Website"
 						desc="The first version of my personal website, build in next.js."
+						stack="NextJs, Velite"
 					/>
-				</ul>
+				</div>
 			</div>{" "}
 		</Container>
 	);
