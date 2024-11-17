@@ -12,6 +12,29 @@ export const metadata: Metadata = {
 	description: "Collection of projects",
 };
 
+const projects = [
+	{
+		href: "website",
+		name: "Website",
+		desc: "The first version of my personal website, built in Next.js.",
+	},
+	{
+		href: "dotfiles",
+		name: "My dotfiles",
+		desc: "my dotfiles for arch Linux hyprland, including my Neovim config.",
+	},
+	{
+		href: "simpleBlog",
+		name: "Simple Blog",
+		desc: "A simple blog built with Next.js and Velite.",
+	},
+	{
+		href: "react-project",
+		name: "React Projects",
+		desc: "collection of open-source projects, components, React hooks, and more made with react.",
+	},
+];
+
 export default function Projects() {
 	return (
 		<Container>
@@ -35,26 +58,14 @@ export default function Projects() {
 			<div className="w-full prose">
 				<p className="m-0">Here is some of my favorite project: </p>
 				<ul className="pt-3 m-0">
-					<ProjectCard
-						href="react-project"
-						name="React Projects"
-						desc="A collection of small React Projects."
-					/>
-					<ProjectCard
-						href="simpleBlog"
-						name="Simple Blog"
-						desc="A simple blog build with nextJs and Velite."
-					/>
-					<ProjectCard
-						href="dotfiles"
-						name="My dotfiles"
-						desc="My Arch linux hyprland dotfiles, also my neovim config."
-					/>
-					<ProjectCard
-						href="website"
-						name="Website"
-						desc="The first version of my personal website, build in next.js."
-					/>
+					{projects.map((project) => (
+						<ProjectCard
+							key={project.href}
+							href={project.href}
+							name={project.name}
+							desc={project.desc}
+						/>
+					))}
 				</ul>
 			</div>
 		</Container>
