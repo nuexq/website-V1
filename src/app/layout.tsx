@@ -3,11 +3,11 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
 import { Nav } from "@/components/layout/Nav";
-import { Hotkeys } from "@/components/Hotkeys";
 import KeyLogger from "@/components/KeyLogger";
 import Script from "next/script";
 import { Lora } from "next/font/google";
 import { TerminalBar } from "@/features/TerminalBar/TerminalBar";
+import { Hotkeys } from "@/features/Hotkeys/Hotkeys";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
