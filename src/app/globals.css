@@ -112,7 +112,7 @@
   }
 
   a {
-    @apply underline underline-offset-4 decoration-dotted decoration-1 font-semibold before:content-['['] after:content-[']'] hover:bg-black hover:text-background;
+    @apply underline underline-offset-4 decoration-dotted decoration-1 font-semibold before:content-['['] after:content-[']'] before:opacity-60 before:hover:opacity-0 after:hover:opacity-0 after:opacity-60 hover:bg-black hover:text-background;
   }
 }
 
