@@ -22,5 +22,5 @@ export const TerminalTime = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  return <div className="text-xs text-muted-foreground font-departureMono">{time}</div>;
+  return <div className="text-xs font-departureMono">{time}</div>;
 };
