@@ -29,7 +29,7 @@ export default function Home() {
 					<u>C</u>, plus I know kinda <u>Python</u> and <u>Lua</u>.
 				</p>
 				<p>
-					Working with <span className="highlight">React | Next.js</span>. Also
+					Working with <span className="highlight">React, Next.js</span>. Also
 					familiar with Node.js/Bun, Express and MongoDB/mongoose.
 				</p>
 				<h3>Tools</h3>
