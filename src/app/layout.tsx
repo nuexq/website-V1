@@ -8,7 +8,6 @@ import { Lora } from "next/font/google";
 import { TerminalBar } from "@/features/TerminalBar/TerminalBar";
 import { Hotkeys } from "@/features/Hotkeys/Hotkeys";
 import KeyLogger from "@/features/KeyLogger/KeyLogger";
-import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
