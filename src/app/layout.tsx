@@ -59,11 +59,11 @@ export default function RootLayout({
 				)}
 			</head>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} ${departureMono.variable} ${lora.variable} antialiased min-h-dvh font-geist flex flex-col md:flex-row p-4 lg:p-32`}
+				className={`${geistSans.variable} ${geistMono.variable} ${departureMono.variable} ${lora.variable} antialiased min-h-fit font-geist flex flex-col md:flex-row p-4 lg:p-32`}
 			>
 				<Hotkeys />
 				<Nav />
-				<main className="flex flex-col w-full md:max-w-2xl gap-2 pb-4 sm:px-6">
+				<main className="flex flex-col w-full md:max-w-2xl gap-2 px-4 pb-4 max-md:pt-6 sm:px-6 border-t border-border md:border-0">
 					<TerminalBar />
 					{children}
 				</main>
