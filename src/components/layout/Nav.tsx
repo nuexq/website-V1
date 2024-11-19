@@ -14,7 +14,7 @@ export const Nav = () => {
   const pathnameArray = pathname.split("/");
 
   return (
-    <nav className="nav md:border-r border-border">
+    <nav className="md:border-r border-border">
       <div className="flex flex-col">
         {navLinks.map((link) => (
           <Link
