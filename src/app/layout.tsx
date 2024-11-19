@@ -46,7 +46,7 @@ export default function RootLayout({
   right,
 }: Readonly<{
   children: React.ReactNode;
-  right?: React.ReactNode;
+  right: React.ReactNode;
 }>) {
   return (
     <html lang="en">
