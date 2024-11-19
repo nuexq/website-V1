@@ -8,6 +8,7 @@ import { Lora } from "next/font/google";
 import { TerminalBar } from "@/features/TerminalBar/TerminalBar";
 import { Hotkeys } from "@/features/Hotkeys/Hotkeys";
 import KeyLogger from "@/features/KeyLogger/KeyLogger";
+import Link from "next/link";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -73,6 +74,7 @@ export default function RootLayout({
                 <div className="flex-1 w-full">{children}</div>
               </div>
             </div>
+            {right}
           </main>
         </div>
         <KeyLogger />
