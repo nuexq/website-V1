@@ -54,7 +54,7 @@ export default function Projects() {
 					</Link>
 				</p>
 			</div>
-			<hr className="border-border mb-3" />
+			<hr className="border-border mb-3 w-full" />
 			<div className="w-full prose">
 				<p className="m-0">Here is some of my favorite project: </p>
 				<ul className="pt-3 m-0">
