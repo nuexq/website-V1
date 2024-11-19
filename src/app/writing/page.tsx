@@ -35,29 +35,25 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
 				</p>
 			</div>
 			<hr className="border-border mb-3" />
-			<div className="grid grid-cols-12 gap-3">
-				<div className="col-span-12 col-start-1">
-					{displayPosts?.length > 0 ? (
-						<ul className="flex flex-col gap-6">
-							{displayPosts.map((post) => {
-								const { slug, date, title, description } = post;
-								return (
-									<li key={slug}>
-										<PostCard
-											slug={slug}
-											title={title}
-											date={date}
-											description={description}
-										/>
-									</li>
-								);
-							})}
-						</ul>
-					) : (
-						<p>Nothing to see here YET</p>
-					)}
-				</div>
-			</div>
+			{displayPosts?.length > 0 ? (
+				<ul className="flex flex-col gap-6">
+					{displayPosts.map((post) => {
+						const { slug, date, title, description } = post;
+						return (
+							<li key={slug}>
+								<PostCard
+									slug={slug}
+									title={title}
+									date={date}
+									description={description}
+								/>
+							</li>
+						);
+					})}
+				</ul>
+			) : (
+				<p>Nothing to see here YET</p>
+			)}
 		</article>
 	);
 }
