@@ -1,5 +1,4 @@
 import { posts } from "#site/content";
-import Container from "@/components/Container";
 import PostCard from "@/components/PostCard";
 import Title from "@/components/Title";
 import { sortPosts } from "@/lib/utils";
@@ -28,15 +27,15 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
 	);
 
 	return (
-		<Container>
+		<article>
 			<div className="space-y-2 mb-6">
 				<Title title="Writing" />
 				<p className="text-muted-foreground text-sm">
 					Some of my notes and thoughts.
 				</p>
 			</div>
-			<hr className="border-border mb-3 w-full" />
-			<div className="grid grid-cols-12 gap-3 w-full">
+			<hr className="border-border mb-3" />
+			<div className="grid grid-cols-12 gap-3">
 				<div className="col-span-12 col-start-1">
 					{displayPosts?.length > 0 ? (
 						<ul className="flex flex-col gap-6">
@@ -59,6 +58,6 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
 					)}
 				</div>
 			</div>
-		</Container>
+		</article>
 	);
 }

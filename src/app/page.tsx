@@ -1,4 +1,3 @@
-import Container from "@/components/Container";
 import Title from "@/components/Title";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
 	return (
-		<Container>
+		<article>
 			<div className="mb-6">
 				<Title title="Noθne" className="font-departureMono" />
 			</div>
@@ -69,6 +68,6 @@ export default function Home() {
 				<hr className="border-border my-4" />
 				<p className="text-sm">Thanks for stopping by!</p>
 			</div>
-		</Container>
+		</article>
 	);
 }

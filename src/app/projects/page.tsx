@@ -1,4 +1,3 @@
-import Container from "@/components/Container";
 import ProjectCard from "@/components/ProjectCard";
 import Title from "@/components/Title";
 import { buttonVariants } from "@/components/ui/button";
@@ -37,8 +36,8 @@ const projects = [
 
 export default function Projects() {
 	return (
-		<Container>
-			<div className="flex-1 space-y-2 mb-6">
+		<article>
+			<div className="space-y-2 mb-6">
 				<Title title="Projects" />
 				<p className="text-muted-foreground text-sm">
 					You can see all my project in my{" "}
@@ -54,8 +53,8 @@ export default function Projects() {
 					</Link>
 				</p>
 			</div>
-			<hr className="border-border mb-3 w-full" />
-			<div className="w-full prose">
+			<hr className="border-border mb-3" />
+			<div className="prose">
 				<p className="m-0">Here is some of my favorite project: </p>
 				<ul className="pt-3 m-0">
 					{projects.map((project) => (
@@ -68,6 +67,6 @@ export default function Projects() {
 					))}
 				</ul>
 			</div>
-		</Container>
+		</article>
 	);
 }
