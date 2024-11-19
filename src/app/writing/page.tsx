@@ -35,8 +35,8 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
 					Some of my notes and thoughts.
 				</p>
 			</div>
-			<hr className="border-border mb-3" />
-			<div className="grid grid-cols-12 gap-3">
+			<hr className="border-border mb-3 w-full" />
+			<div className="grid grid-cols-12 gap-3 w-full">
 				<div className="col-span-12 col-start-1">
 					{displayPosts?.length > 0 ? (
 						<ul className="flex flex-col gap-6">
