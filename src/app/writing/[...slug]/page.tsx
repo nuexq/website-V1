@@ -78,7 +78,7 @@ export default async function PostPage({ params }: PostPageProps) {
 
 	return (
 		<Container>
-			<div className="flex flex-col gap-3 mb-6">
+			<div className="flex flex-col gap-3 mb-6 w-full">
 				<div className="flex flex-col gap-1 max-w-[80%]">
 					<Title title={post.title} className="font-lora" />
 					<dl>
