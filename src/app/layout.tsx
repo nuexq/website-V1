@@ -43,7 +43,6 @@ export const viewport: Viewport = {
 
 export default function RootLayout({
   children,
-  right,
 }: Readonly<{
   children: React.ReactNode;
   right: React.ReactNode;
@@ -68,12 +67,11 @@ export default function RootLayout({
           <main className="flex container justify-end items-start pb-8 pt-6 md:pb-12 md:mt-10 lg:py-32">
             <div className="flex flex-col md:flex-row flex-1">
               <Nav />
-              <div className="flex flex-col gap-2 border-t border-border sm:border-0 max-sm:pt-6 w-full">
+              <div className="flex flex-col gap-2 border-t border-border md:border-0 max-md:pt-6 w-full">
                 <TerminalBar />
                 <div className="flex-1 w-full">{children}</div>
               </div>
             </div>
-            {right}
           </main>
         </div>
         <KeyLogger />
