@@ -24,8 +24,8 @@ export default function Home() {
 				<p>
 					I&apos;m web-focused but also exploring{" "}
 					<u>algorithms, data structures, and low-level programming.</u>. I
-					know: <span className="highlight">JS/TS</span>, and currently
-					practicing <u>C</u>,I also have some familiarity with <u>Python</u>{" "}
+					know: <span className="highlight">JS/TS</span>, and currently I'm
+					Learning <u>Rust</u>,I also have some familiarity with <u>Python</u>{" "}
 					and <u>Lua</u>.
 				</p>
 				<p>
