@@ -25,16 +25,16 @@ export default function Home() {
 					I&apos;m web-focused but also exploring{" "}
 					<u>algorithms, data structures, and low-level programming</u>. I
 					know: <span className="highlight">JS/TS</span>, and currently I&apos;m
-					Learning <u>Rust</u>,I also have some familiarity with <u>Python</u>{" "}
+					Learning <u>Rust</u>, I also have some familiarity with <u>Python</u>{" "}
 					and <u>Lua</u>.
 				</p>
 				<p>
-					I work with <span className="highlight">React, Next.js</span> and am
+					I work with <span className="highlight">React, Next.js</span> and I&apos;m
 					also familiar with Node.js/Bun, Express, and MongoDB/mongoose.
 				</p>
 				<h3>Tools</h3>
 				<p>
-					Neovim is my primary editor, and I use Arch Linux on a{" "}
+					Neovim is my primary editor, and I use Arch Linux (btw) on a{" "}
 					<u>Lenovo ThinkPad T460</u> with an Intel i5-6300U.{" "}
 				</p>
 				<h3>Extra</h3>
@@ -47,9 +47,9 @@ export default function Home() {
 				</p>
 				<p>
 					As for gaming, I’m into story-driven and challenging games. My
-					favorites include <u>Dark Souls 1</u>, <u>Silent Hill 2</u>,{" "}
-					<u>Stardew Valley</u> and <u>Far Cry 3</u>. I love calisthenics, and I
-					want to improve at it (currently holding an 8-second L-sit).
+					favorites include <u>Dark Souls 1</u>, <u>Silent Hill 2</u> and{" "}
+					<u>Stardew Valley</u>. I love calisthenics, and I
+					want to improve at it.
 				</p>
 				<p>
 					Let’s connect:{" "}
