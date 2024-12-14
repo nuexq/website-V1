@@ -23,7 +23,7 @@ export default function Home() {
 				<h3>Tech</h3>
 				<p>
 					I&apos;m web-focused but also exploring{" "}
-					<u>algorithms, data structures, and low-level programming.</u>. I
+					<u>algorithms, data structures, and low-level programming</u>. I
 					know: <span className="highlight">JS/TS</span>, and currently I&apos;m
 					Learning <u>Rust</u>,I also have some familiarity with <u>Python</u>{" "}
 					and <u>Lua</u>.
