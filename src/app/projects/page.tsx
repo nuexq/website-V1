@@ -25,7 +25,7 @@ const projects = [
 	{
 		href: "events-website",
 		name: "Events website",
-		desc: "An improved version of "urba events" website.",
+		desc: "An improved version of 'urba events' website.",
 	},
 	{
 		href: "simpleBlog",
