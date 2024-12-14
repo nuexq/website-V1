@@ -23,6 +23,11 @@ const projects = [
 		desc: "my dotfiles for arch Linux hyprland, including my Neovim config.",
 	},
 	{
+		href: "events-website",
+		name: "Events website",
+		desc: "An improved version of "urba events" website.",
+	},
+	{
 		href: "simpleBlog",
 		name: "Simple Blog",
 		desc: "A simple blog built with Next.js and Velite.",
