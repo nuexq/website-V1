@@ -67,7 +67,9 @@
   }
 }
 
-
+.table-overflow {
+  @apply overflow-x-auto;
+}
 
 .highlight {
   @apply bg-card text-foreground font-bold rounded-none before:content-['`'] after:content-['`'];
@@ -122,7 +124,6 @@
   }
 
   table {
-
     @apply w-full table-auto border-collapse mt-6 mb-6;
   }
 
