@@ -15,9 +15,8 @@ export default function Home() {
 			</div>
 			<div className="prose">
 				<p>
-					16-year-old high school student from Morocco. with a{" "}
-					<span className="highlight">passion for learning</span> and{" "}
-					<span className="highlight">overthinking</span> issues. Into{" "}
+					Hello I&apos;m 16-year-old high school student from Morocco. with a{" "}
+					<span className="highlight">passion for learning</span> and <span className="highlight">overthinking</span> issues. Into{" "}
 					<u>programming</u>, <u>gaming</u>, and <u>reading</u>, and I kickbox.
 				</p>
 				<h3>Tech</h3>
