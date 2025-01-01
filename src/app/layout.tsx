@@ -63,7 +63,7 @@ export default function RootLayout({
 			>
 				<Hotkeys />
 				<Nav />
-				<main className="flex flex-col w-full md:max-w-2xl gap-2 px-4 pb-4 max-md:pt-6 sm:px-6 border-t border-border md:border-0">
+				<main className="flex flex-col w-full md:max-w-screen-md gap-2 px-4 pb-4 max-md:pt-6 sm:px-6 border-t border-border md:border-0">
 					<TerminalBar />
 					{children}
 				</main>
