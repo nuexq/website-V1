@@ -88,7 +88,7 @@ export default async function PostPage({ params }: PostPageProps) {
 						</dd>
 					</dl>
 				</div>
-				<div className="flex justify-between items-center text-sm">
+				<div className="flex justify-between items-start gap-4 text-sm">
 					<p>{post.description}</p>
 					<p className="font-departureMono">
 						<Link href="/writing" className={buttonVariants({variant: "link"})}>◄ Back</Link>
