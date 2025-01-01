@@ -8,6 +8,7 @@ import { MDXContent } from "@/components/mdx-components";
 import Title from "@/components/Title";
 import Link from "next/link";
 import { formateDate } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
 
 interface PostPageProps {
 	params: {
@@ -87,10 +88,10 @@ export default async function PostPage({ params }: PostPageProps) {
 						</dd>
 					</dl>
 				</div>
-				<div className="flex justify-between items-center ">
+				<div className="flex justify-between items-center text-sm">
 					<p>{post.description}</p>
-					<p className="text-sm font-departureMono">
-						<Link href="/writing">◄ Back</Link>
+					<p className="font-departureMono">
+						<Link href="/writing" className={buttonVariants({variant: "link"})}>◄ Back</Link>
 					</p>
 				</div>
 			</div>
