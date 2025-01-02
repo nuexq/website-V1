@@ -1,7 +1,7 @@
 # Website.V1
 My first version of my personal website. Built with Next.js.
 
-<img width="1694" alt="image" src="https://github.com/user-attachments/assets/5d909ded-1e50-4334-921a-b6697a980697">
+<img width="1694" alt="image" src="https://github.com/user-attachments/assets/b450469e-57c5-4263-85bc-6032ea1cc389">
 
 ## Features
 - Dynamic OG images for blog posts.
