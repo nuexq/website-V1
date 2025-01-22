@@ -22,7 +22,7 @@ async function loadGoogleFont(font: string, text: string) {
 
 export async function GET(req: NextRequest) {
 	const { searchParams } = new URL(req.url);
-	const title = searchParams.get("title") || "No0ne";
+	const title = searchParams.get("title") || "neuxq";
   const date = searchParams.get("date") || "2024-01-01";
 
 	try {

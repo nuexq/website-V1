@@ -1,6 +1,7 @@
 import Title from "@/components/Title";
 import { Metadata } from "next";
 import Link from "next/link";
+import { siteConfig } from "../config/site";
 
 export const metadata: Metadata = {
 	title: "[N]o0ne",
@@ -11,7 +12,7 @@ export default function Home() {
 	return (
 		<article>
 			<div className="mb-6">
-				<Title title="Noθne" className="font-departureMono" />
+				<Title title={siteConfig.name} className="font-departureMono" />
 			</div>
 			<div className="prose">
 				<p>
@@ -52,14 +53,14 @@ export default function Home() {
 				</p>
 				<p>
 					Let’s connect:{" "}
-					<Link href="https://github.com/No0ne003" target="_blank">
+					<Link href={siteConfig.links.github} target="_blank">
 						GitHub
 					</Link>
 					,{" "}
-					<Link href="https://www.twitter.com/No0ne003" target="_blank">
+					<Link href={siteConfig.links.twitter} target="_blank">
 						Twitter
 					</Link>
-					, Discord (No0ne.003).{" "}
+					, Discord (neuxq).{" "}
 					<Link className="font-departureMono" href="https://ctp-webr.ing/no0ne/previous">◄</Link>
 					<Link href="https://ctp-webr.ing/">webring</Link>
 					<Link className="font-departureMono" href="https://ctp-webr.ing/no0ne/next">►</Link>
