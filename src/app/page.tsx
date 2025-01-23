@@ -61,9 +61,9 @@ export default function Home() {
 						Twitter
 					</Link>
 					, Discord (nuexq).{" "}
-					<Link className="font-departureMono" href="https://ctp-webr.ing/nuexq/previous">◄</Link>
+					<Link className="font-departureMono" href="https://ctp-webr.ing/neuxq/previous">◄</Link>
 					<Link href="https://ctp-webr.ing/">webring</Link>
-					<Link className="font-departureMono" href="https://ctp-webr.ing/nuexq/next">►</Link>
+					<Link className="font-departureMono" href="https://ctp-webr.ing/neuxq/next">►</Link>
 				</p>
 				<hr className="border-border my-4" />
 				<p className="text-sm">Thanks for stopping by!</p>
