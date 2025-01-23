@@ -4,7 +4,7 @@ import Link from "next/link";
 import { siteConfig } from "../config/site";
 
 export const metadata: Metadata = {
-	title: "[N]o0ne",
+	title: "[N]uexq",
 	description: "Home",
 };
 
