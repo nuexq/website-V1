@@ -60,7 +60,7 @@ export default function Home() {
 					<Link href={siteConfig.links.twitter} target="_blank">
 						Twitter
 					</Link>
-					, Discord (neuxq).{" "}
+					, Discord (nuexq).{" "}
 					<Link className="font-departureMono" href="https://ctp-webr.ing/nuexq/previous">◄</Link>
 					<Link href="https://ctp-webr.ing/">webring</Link>
 					<Link className="font-departureMono" href="https://ctp-webr.ing/nuexq/next">►</Link>
