@@ -8,6 +8,7 @@ import { Lora } from "next/font/google";
 import { TerminalBar } from "@/features/TerminalBar/TerminalBar";
 import { Hotkeys } from "@/features/Hotkeys/Hotkeys";
 import KeyLogger from "@/features/KeyLogger/KeyLogger";
+export const dynamic = "force-static"; // Fully static page
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
