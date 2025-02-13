@@ -33,7 +33,7 @@ const projects = [
 		desc: "A simple blog built with Next.js and Velite.",
 	},
 	{
-		href: "react-project",
+		href: "react-projects",
 		name: "React Projects",
 		desc: "collection of open-source projects, components, React hooks, and more made with react.",
 	},
