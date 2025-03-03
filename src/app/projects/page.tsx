@@ -13,6 +13,11 @@ export const metadata: Metadata = {
 
 const projects = [
 	{
+		href: "game-of-life",
+		name: "Conway's Game of Life",
+		desc: "A Conway's Game of Life implementation using WebGPU and React/Vite. ",
+	},
+	{
 		href: "website",
 		name: "Website",
 		desc: "The first version of my personal website, built in Next.js.",
