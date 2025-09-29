@@ -16,6 +16,8 @@ interface PostPageProps {
 	};
 }
 
+export const runtime = 'edge';
+
 async function getPostFromParams(params: PostPageProps["params"]) {
 	const slug = params?.slug?.join("/");
 	const post = posts.find((post) => post.slugAsParams === slug);
